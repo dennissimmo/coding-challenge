@@ -18,7 +18,7 @@ a {
 
 .header .left-menu {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 .header .left-menu .logo {
@@ -30,14 +30,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .header .right-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .header .right-menu .language {
@@ -56,6 +56,84 @@ a {
 
 .header .right-menu .login a {
     color: white;
+}
+
+.featured .title {
+    font-size: 2rem;
+    color: white;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.featured {
+}
+
+.featured .videos-section {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 580px 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.featured .videos-section .video {
+    height: 326px;
+}
+
+.featured .videos-section .image {
+    height: 326px;
+    background: url("https://blog.playstation.com/tachyon/2022/10/52d17fcc1863b983a4e3888430ee26f3fc43066b-scaled.jpg?resize=1088%2C612&crop_strategy=smart");
+}
+
+.featured .videos-section .video.center {
+    position: relative;
+    width: 580px;
+    height: 326px;
+}
+
+.featured .videos-section .video.center .image {
+    background: no-repeat url("https://nintendoeverything.com/wp-content/uploads/Overwatch-2-gameplay.jpg");
+    background-size: cover;
+    transform: scale(1.05);
+    border: 2px solid #00b4f0;
+}
+
+.featured .videos-section .video:first-child .image {
+    position: relative;
+}
+
+.featured .videos-section .video:nth-child(5) .image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.featured .videos-section .video:first-child .image .arrow {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    position: absolute;
+    color: #00b4f0;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.featured .videos-section .video:nth-child(5) .image .arrow {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    position: absolute;
+    color: #00b4f0;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 

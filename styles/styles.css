@@ -1,0 +1,61 @@
+@import url("reset.css");
+
+html, body {
+    background: #253141;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(136, 131, 131, 0.7);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.header .left-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.header .left-menu .logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.header .left-menu .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .right-menu .language {
+    text-transform: uppercase;
+    color: rgb(136, 131, 131, 0.7);
+}
+
+.header .right-menu .login {
+    background: #0375d5;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header .right-menu .login a {
+    color: white;
+}
+
+

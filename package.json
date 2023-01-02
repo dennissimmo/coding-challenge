@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "prettier": "2.8.1"
+  },
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4
+  }
+}

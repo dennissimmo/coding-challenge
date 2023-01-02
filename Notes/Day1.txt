@@ -1,0 +1,23 @@
+Today I were playing with WebStorm setup:
+- install Prettier
+- learn new shortcuts
+- burned of Live Edit function
+
+Another things done:
+- create repo
+- chose course for learning
+- implement header and feature sections from course lessons
+
+I realized that I chose wrong course, it had many cons as:
+- unstructured information
+- not finished examples
+- trash talk
+- level of absolute beginners
+- no SCSS
+- bad practices
+
+Conclusion:
+
+1. Decide a new course with real examples and advices how to write correct CSS
+2. Need to find an app to build multi layout window on Mac
+3. Use SCSS

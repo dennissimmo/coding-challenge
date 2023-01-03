@@ -1,0 +1,67 @@
+html {
+    background: no-repeat url("https://assets.codepen.io/6060109/lyric-bg-2.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: url("https://assets.codepen.io/6060109/music.png") no-repeat bottom left;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 48px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+    opacity: 0.66;
+}
+
+.inner-container {
+    height: 75%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.video-container {
+    width: 50%;
+}
+
+/*
+  [3]
+  Add a margin-top to inner-video
+  Fixed pixel height
+  And percentage width
+*/
+.inner-video {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    box-shadow: 10px 10px 50px rgba(0, 255, 255, 0.35);
+}
+
+.lyrics-container {
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    margin: 0 40px;
+    padding: 10px 10px;
+    line-height: 30px;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}

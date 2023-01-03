@@ -1,0 +1,86 @@
+html {
+    background: linear-gradient(46.19deg, #000000 5.66%, #434343 94.35%);
+    font-family: Paladins;
+}
+
+body {
+    font-family: Paladins;
+    height: 100vh;
+    background: url("https://assets.codepen.io/6060109/versus-bg.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+}
+
+.mayweather-container, .logan-container {
+    position: relative;
+}
+
+.mayweather-container {
+    height: 100%;
+    width: 50%;
+    background: url("https://assets.codepen.io/6060109/mayweather.png") no-repeat center bottom;
+}
+
+.logan-container {
+    height: 100%;
+    width: 50%;
+    background: url("https://assets.codepen.io/6060109/loganpaul.png") no-repeat center bottom;
+}
+
+.text-container {
+    background: url("https://assets.codepen.io/6060109/yellow-text-wrapper.png") no-repeat;
+    background-size: contain;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    bottom: 10%;
+    font-size: 24px;
+}
+
+.text-container-1 {
+    left: -10%;
+    padding-left: 100px;
+}
+
+.text-container-1 h1 {
+    margin-left: 100px;
+}
+
+.text-container-2 {
+    right: -10%;
+}
+
+.text-container-2 h1 {
+    margin: 0 0 10px 0;
+    padding-left: 100px;
+}
+
+/*
+then make the containers look good, like the screenshot below.
+
+1. adjust them to the left / right (NEGATIVE) MARGIN
+2. you may also need to change the width and padding
+*/
+
+.mayweather-container .text-container {
+/
+}
+
+/*
+[2] Create ADVANCED SELECTOR(s) for the h1(s) inside of text-container (one level deep)
+
+adjust padding etc until they look good.
+*/
+
+.clock {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    color: white;
+}

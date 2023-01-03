@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(46.19deg, #000000 5.66%, #434343 94.35%);
+    color: white;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.bg-container {
+    height: 100%;
+    background: url("https://assets.codepen.io/6060109/p1-elon-alt.png") no-repeat left bottom;
+    background-size: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.inner-container {
+    height: 60%;
+    width: 80%;
+    position: relative;
+}
+
+.top-left, .bottom-left, .bottom-right {
+    width: 40%;
+    height: 10%;
+}
+
+.top-right, .bottom-left, .bottom-right {
+    position: absolute;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    width: 60%
+}
+
+.top-right {
+    right: 0;
+    top: 0%;
+}
+
+.top-right button {
+    padding: 20px 40px;
+    background: #FE9C0B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bottom-left {
+    bottom: 5%;
+    left: 0;
+    font-size: 50px;
+    color: #00FF6C;
+}
+
+.bottom-right {
+    right: 0;
+    bottom: 10%;
+    height: 70%;
+    width: 40%;
+    border-radius: 15px;
+    overflow: auto;
+}

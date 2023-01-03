@@ -1,0 +1,17 @@
+Today I chose another course: 7 challenges in 7 days
+There are 7 simple pages with beginner level a bit theory
+I made 3 of them and then stopped because next steps is just waste of time.
+Today I have reminded about background shortcut property and negative margin
+
+I realized that I again decided wrong course,
+there is a big change that there few FREE courses which can provide useful
+information with practical examples. That certain course has only purpose to find a new
+clients for author.
+
+Conclusion:
+
+1. Important! You made the same mistake again, decide a right course (give more 10 minutes)
+for intermediate level otherwise it is just wasting of time.
+2. Need to find an app to build multi layout window on Mac
+3. Think about switch to Visual Studio Code because Live Edit in WebStorm is working terrible
+4. If you take lesson from some course, write down the themes which were touched during learning

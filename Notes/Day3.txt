@@ -1,0 +1,18 @@
+Today we started again with a new coure, but finally it suited my needs (at least half of them).
+P.S What you want from a free course)
+
+Lectures are combined with practice, information is useful, all edge case are touched.
+
+Touched themes:
+Today I practiced flex-box, transition, transform, practiced with font-awesome icons.
+I learned how to make scale on hover with margin (what I needed yesterday)
+and created header, sidebar and featured sections, in short I have finished 1 section (CSS only)
+Also I have switched to Visual Studio Code and with a few plugins it works better then WebStorm especially Live Editing
+
+Left practice section (about an hour) we will end up with slider, dark mode and responsive design
+
+Conclusion:
+
+1. I like that course, but It would be better to buy more advenced and long course
+2. Need to find an app to build multi layout window on Mac (find finally it)
+3. Switch to VS code was right decition, but also I have try to use GULP with live reloading plugin, may be it works better

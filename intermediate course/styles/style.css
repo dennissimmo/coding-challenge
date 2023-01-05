@@ -77,12 +77,11 @@ body {
     color: #4dbf00;
 }
 
-.menu-container {
+.navbar-container {
     color: white;
 }
 
 .profile-container {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -132,6 +131,7 @@ body {
     height: 18px;
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
+    transition: all 1s ease;
 }
 
 .sidebar-container {
@@ -197,13 +197,16 @@ body {
     font-weight: bold;
 }
 .movie-list-wrapper {
-    padding: 30px 0;
+    overflow: hidden;
+    padding: 20px 0;
     position: relative;
 }
 .movie-list {
     display: flex;
     align-items: center;
     height: 300px;
+    transform: translate(0);
+    transition: all 1s ease-in-out;
 }
 .movie-list-item {
     margin-right: 30px;
@@ -213,6 +216,7 @@ body {
     width: 270px;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -274,5 +278,41 @@ body {
     right: 0;
     color: lightgray;
     opacity: 0.5;
+}
+
+.container.active {
+    background-color: #fff;
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.navbar-container.active {
+    background-color: #fff;
+    color: black;
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.sidebar-list-item.active {
+    color: black;
+}
+
+.theme-toggle.active {
+    background-color: #000;
+}
+
+.toggle-ball.active {
+    background-color: #fff;
+    transform: translateX(-19px);
+}
+
+@media screen and (max-width: 940px) {
+    .menu-container {
+        display: none;
+    }
 }
 

@@ -1,0 +1,25 @@
+Today I finally finished course, during it I have created Slider and Change Theme functionality,
+it wasn't hard and most part I did by myself. After it I realised that I need another course
+to continue learning and start search for new courses and find on Udemy few courses.
+I already decided to buy one but accidentally found coursehunter.net resourse.
+There are listed many courses from Udemy and other platforms and by subscription
+you can get access to these courses. I decided that it will be cheaper to buy this one instead of buy on Udemy.
+
+During it I have found really cool and good sctructured courses about Angular, NGRX, Typescript and CSS.
+So I have added the best of them to bookmarks and plan to continue my learning journey with them
+
+Touched themes:
+Today I practiced JS (listener, DOM selection, toggling classes), remind conception of adding themes.
+From another course I remind about SEO importance, project structure and useful resources for learning
+and created header, sidebar and featured sections, in short I have finished 1 section (CSS only)
+
+Tommorow I plan to continue learning HTML + CSS by another course, cover almost all main CSS concepts
+
+Conclusion:
+
+1. Finish first course
+2. Found many courses for further learning
+3. Bought access to courses for a month
+4. Need to find an app to build multi layout window on Mac (find finally it)
+5. Feel more confident as on my main job, talked with Team Lead about our project structure,
+ architechure questions and showed my interest in project improvement

@@ -1,0 +1,14 @@
+Today I remind a lot and learn some new things, especially how to set margin and padding
+to align multiple blocks. Also I have added header, simple nav and border seciton.
+That day was mostly theoretical with a little practice.
+
+Touched themes:
+Today I reminded about position, background, semantic tags, margin collapsing, inline elements,
+possibility of adding custom tags through dev console ("Elements") tab.
+
+Conclusion:
+
+1. Started new course (30 lessons passed)
+2. Reminded about many CSS specifics
+3. Need to find an app to build multi layout window on Mac (find finally it)
+4. Today is Christmas in my country, yeasterday I have to do more

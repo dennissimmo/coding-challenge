@@ -1,3 +1,14 @@
+@import url("../css/reset.css");
+@import url("../css/normalize.css");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background-color: #ffe2b0;
 }
@@ -10,7 +21,7 @@ header {
 }
 
 .navigation-container {
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
 }
 
 .links-list {
@@ -37,6 +48,7 @@ header {
     background-color: red;
     height: 640px;
     background: url("../img/01-picture.jpg") center/cover no-repeat;
+    margin-bottom: 20px;
 }
 
 
@@ -48,30 +60,93 @@ header {
 
 .special-order {
     position: absolute;
-    top: 345px;
-    left: 730px;
+    top: 54%;
+    left: 50%;
     width: 420px;
     height: 190px;
     background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
 }
 
 .tooltip-frame {
-    box-sizing: border-box;
     margin: 15px;
     border: 1px solid #000;
     padding: 17px 28px 0 28px;
     height: 160px;
     width: 390px;
+    text-align: leftf;
 }
 
 .tooltip-title {
     margin: 0;
     font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
     font-size: 36px;
     margin-bottom: 9px;
 }
 
 .tooltip-description {
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+
+.description-section {
+    margin-bottom: 20px;
+}
+
+.description-section__logo-block {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-section__logo-block img {
+    margin-right: 76px;
+}
+
+.description-section__logo-block img:last-child {
+    margin-right: 0;
+}
+
+.decription-section__text {
+    text-align: center;
+}
+
+.bakery-title {
+    margin: 0;
+    font-size: 96px;
+    font-family: 'Philosopher';
+    font-weight: 400;
+}
+
+.highlight-text {
+    color: #f15b40;
+}
+
+.bakery-description {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.map-section__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.map {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divider {
+    margin: 0 auto ;
+    width: 1024px;
+    height: 1px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-bottom: 40px;
+    height: 80px;
+}
+

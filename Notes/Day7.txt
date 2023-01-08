@@ -1,0 +1,15 @@
+Today wasn't very productive day if we will talking about challenge. 
+But today I spent 40 minutes to prepare for an interview, updated Resume, Directives block, Building blocks on an Angular,
+questions for mobile screening interview. Also I have started new project with SASS usage in .scss syntax (that one which was created in Figma).
+Also I want to add that I don't skip a day yesterday, I just made commit after midnight.
+
+Touched themes:
+SASS, CV, Mobile Screen Interview, Directives, Building blocks
+
+Conclusion:
+
+1. Updated resume
+2. Watched Avatar 2: Way of water in the cinema
+3. Need to find an app to build multi layout window on Mac (find it finally)
+4. Discovered first Angular interview questions
+5. Today I'm planning to finish that course (without Bootstrap section)

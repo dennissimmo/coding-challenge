@@ -1,0 +1,39 @@
+@import "normalizes";
+@import "resets";
+
+$main-orange: #FF8B60;
+
+.main-section {
+    background-color: #CDC6C6;
+    height: 800px;
+    padding-top: 16px;
+
+    &__nav-container {
+        height: 84px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.nav-menu {
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        margin-right: 70px;
+        font-size: 18px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

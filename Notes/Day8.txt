@@ -1,0 +1,15 @@
+Today I read articles about REM, pseudo classes and approaches for adding margin/padding. 
+I spent about 6+ hours today, finished Figma project and adopted for Desktop and Tablet device, created a hamburger menu.
+I realized I should artificially push (remind) myself to do things (layout) more quickly, because it takes to much time sometimes for very basic things.
+My work with that course is finished, may be I wil adopt that project for mobile version as well but it will be not on that week.
+The next step is to take more advanced course and complete its.
+
+Touched themes:
+SASS, Flex, min/max height/width, rem, em, types of layout (adaptive, responsive), BEM
+
+Conclusion:
+
+1. Finished course
+2. Improved skills in BEM naming
+3. Need to find an app to build multi layout window on Mac (find it finally)
+4. Going to find new course with more advanced CSS concepts and tips

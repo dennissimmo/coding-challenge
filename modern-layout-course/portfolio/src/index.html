@@ -4,24 +4,190 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bakery</title>
     <meta name="description" content="Landing page for bakery web site" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Bakery</title>
   </head>
   <body>
-    <div class="main-section">
+    <!-- first-section -->
+    <section class="main-section">
       <div class="container main-section__nav-container">
-        <div class="main-section__header">
+        <!-- navigaiton-menu -->
+        <header class="main-section__header">
           <a href=""><img src="img/logo.svg" alt="" /></a>
-        </div>
+        </header>
         <nav class="main-section__nav nav-menu">
           <ul class="nav-menu__list">
-            <li class="nav-menu__list-item">About me</li>
-            <li class="nav-menu__list-item">Exercises</li>
-            <li class="nav-menu__list-item">Record</li>
+            <li class="nav-menu__list-item">
+              <a href="#about-me">
+                About me
+              </a></li>
+            <li class="nav-menu__list-item">
+              <a href="#exercise">Exercises</a>
+            </li>
+            <li class="nav-menu__list-item">
+              <a href="#">
+                Record
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
-    </div>
+      <div class="container main-section__content-container">
+        <div class="left-wrapper">
+          <img src="img/Character Image.png" alt="" class="left-wrapper__img" />
+          <div class="left-wrapper__rectangle-blue"></div>
+          <div class="left-wrapper__rectangle-orange"></div>
+          <div class="left-wrapper__rectangle-gray"></div>
+        </div>
+        <div class="right-wrapper">
+          <div class="about-section">
+            <h2 class="about-section__title title">
+              I am Denys
+              <hr class="title__hr" />
+            </h2>
+            <p class="about-section__description">
+              Advanced musician who can help improve your skills of playing
+              guitar and finally make your dream reality
+            </p>
+          </div>
+          <div class="social">
+            <div class="social__icon"><i class="fa-brands fa-twitter"></i></div>
+            <div class="social__icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="social__icon">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <div class="right-wrapper__button button">
+            <button class="button__main-btn">Record</button>
+          </div>
+        </div>
+        <div class="main-section__first-elipse elipse">
+          <div class="elipse__subtract"></div>
+        </div>
+      </div>
+      <div class="main-section__second-elipse elipse elipse_big">
+        <div class="elipse__subtract elipse__subtract_big"></div>
+      </div>
+    </section>
+    <section id="about-me" class="guitar-section">
+      <div class="container">
+          <div class="guitar-section__inner content">
+            <h2 class="content__title title">
+              Studying
+              <hr class="title__hr" />
+            </h2>
+            <div class="content__cards card-block">
+              <div class="card-block__item card-block__item_gray">
+                <img src="img/accoustic.png" class="card-block__item-img">
+
+                </img>
+                <div class="card-block__item-text">
+                  Acoustic
+                  guitar
+                </div>
+              </div>
+              <div class="card-block__item card-block__item_orange">
+                <img src="img/ukulele.png" class="card-block__item-img">
+
+                </img>
+                <div class="card-block__item-text">
+                  Ukulele
+                </div>
+              </div>
+              <div class="card-block__item card-block__item_blue">
+                <img src="img/electro.png" class="card-block__item-img">
+
+                </img>
+                <div class="card-block__item-text">
+                  Electric guitar
+                </div>
+              </div>
+            </div>
+            <div class="content__achievements achievement">
+              <div class="achievement__item">
+                <img src="img/icon-1.png" class="achievement__item-icon"></img>
+                <div class="achievement__item-description description">
+                  <h3 class="description__title">
+                    7
+                  </h3>
+                  <p class="description__text">
+                    years of study
+                  </p>
+                </div>
+              </div>
+              <div class="achievement__item">
+                <img src="img/icon-2.png" class="achievement__item-icon"></img>
+                <div class="achievement__item-description description">
+                  <h3 class="description__title">
+                    2000
+                  </h3>
+                  <p class="description__text">
+                    hours of study
+                  </p>
+                </div>
+              </div>
+              <div class="achievement__item">
+                <img src="img/icon-3.png" class="achievement__item-icon"></img>
+                <div class="achievement__item-description description">
+                  <h3 class="description__title">
+                    314
+                  </h3>
+                  <p class="description__text">
+                    students
+                  </p>
+                </div>
+              </div>
+              <div class="achievement__item">
+                <img src="img/icon-4.png" class="achievement__item-icon"></img>
+                <div class="achievement__item-description description">
+                  <h3 class="description__title">
+                    276
+                  </h3>
+                  <p class="description__text">
+                    reviews with 5 stars
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guitar-section__first-elipse elipse">
+            <div class="elipse__subtract"></div>
+          </div>
+          <div class="guitar-section__second-elipse elipse elipse_big">
+            <div class="elipse__subtract elipse__subtract_big"></div>
+          </div>
+      </div>
+    </section> 
+    <section id="exercise" class="learning-section">
+      <div class="container learning-section__container">
+        <div class="learning-section__figure">
+          <img src="img/dashed circle.svg" alt="" class="figure">
+        </div>
+        <div class="learning-section__content content">
+          <h2 class="content__title title">
+            Learning
+          </h2>
+          <p class="content__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, culpa hic aspernatur soluta nemo maiores, vero cupiditate aperiam eius doloribus voluptatibus, quibusdam ea voluptas omnis vel magnam qui. Temporibus, eaque.
+          </p>
+          <div class="content__button button">
+            <button class="button__main-btn">Record</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="learning-section__elipse elipse">
+          
+        <div class="elipse__subtract"></div>
+        
+      </div>
+    </section>
   </body>
 </html>

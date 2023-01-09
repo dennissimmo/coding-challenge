@@ -2,11 +2,19 @@
 @import "resets";
 
 $main-orange: #FF8B60;
+$main-blue: #4288EB;
+$background: #CDC6C6;
+
+* {
+    box-sizing: border-box;
+}
 
 .main-section {
-    background-color: #CDC6C6;
-    height: 800px;
+    position: relative;
+    background-color: $background;
+    min-height: 830px;
     padding-top: 16px;
+    overflow: hidden;
 
     &__nav-container {
         height: 84px;
@@ -14,13 +22,29 @@ $main-orange: #FF8B60;
         justify-content: space-between;
         align-items: center;
     }
+
+    &__content-container {
+        position: relative;
+        display: flex;
+    }
+
+    &__first-elipse {
+        position: absolute;
+        top: 130px;
+        right: 135px;
+    }
+
+    &__second-elipse {
+        position: absolute;
+        right: -100px;
+        top: 650px;
+    }
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
-
 
 .nav-menu {
 
@@ -37,3 +61,321 @@ $main-orange: #FF8B60;
         }
     }
 }
+
+
+
+.left-wrapper {
+    position: relative;
+    &__img {
+        position: relative;
+        z-index: 4;
+    }
+
+    &__rectangle-blue {
+        z-index: 3;
+        position: absolute;
+        width: 630px;
+        height: 160px;
+        top: 230px;
+        left: -50px;
+        background: $main-blue;
+        border-radius: 126px;
+        transform: rotate(-108.83deg);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &__rectangle-orange {
+        z-index: 2;
+        position: absolute;
+        width: 630px;
+        height: 160px;
+        left: -25px;
+        top: 250px;
+
+        background: $main-orange;
+        border-radius: 126px;
+        transform: rotate(-76.12deg);
+    }
+
+    &__rectangle-gray {
+        z-index: 1;
+        position: absolute;
+        width: 630px;
+        height: 160px;
+        left: 0px;
+        top: 250px;
+
+        background: #D9D9D9;
+        border-radius: 126px;
+        transform: rotate(-49.37deg);
+    }
+}
+
+
+.right-wrapper {
+    z-index: 1;
+    width: 340px;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+
+    &__button {
+    
+    }
+}
+
+.button {
+
+    &__main-btn {
+        width: 150px;
+        height: 45px;
+        background-color: $main-orange;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+    
+
+.about-section {
+
+    &__title {
+        
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__social {
+    }
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 3px;
+
+    &__hr {
+        margin: 0;
+        border-bottom: 1px solid black;
+        width: 50px;
+    }
+}
+
+.social {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        i {
+            font-size: 21px;
+        }
+    }
+}
+
+.elipse {
+    width: 174px;
+    height: 174px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(144.56% 104.89% at 23.13% 9.47%, rgba(221, 146, 0, 0) 0%, rgba(66, 160, 143, 0.661458) 52.17%, rgba(10, 11, 11, 0.28) 99.52%);
+
+    &_big {
+        width: 282px;
+        height: 282px;
+    }
+
+    &__subtract {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        left: 1126.99px;
+        top: 326.08px;
+
+        background: $background;
+
+        &_big {
+            width: 188px;
+            height: 188px;
+        }
+    }
+}
+
+.guitar-section {
+    position: relative;
+    min-height: 550px;
+
+    &__inner {
+    }
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__achievements {
+    }
+}
+.card-block {
+    margin-bottom: 27px;
+    
+    &__item {
+        border-radius: 10px;
+        padding-top: 40px;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: $main-orange;
+        width: 336px;
+        height: 263px;
+        margin-right: 70px;
+
+        &_gray {
+            background-color: $background;
+        }
+
+        &_orange {
+            background-color: $main-orange;
+        }
+
+        &_blue {
+            background-color: $main-blue;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__item-img {
+        align-self: flex-start;
+        width: 124px;
+    }
+
+    &__item-text {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: #000000;
+        width: 150px;
+        transform: rotate(90deg);
+    }
+}
+
+.achievement {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+        display: flex;
+    }
+
+    &__item-icon {
+        margin-right: 10px;
+    }
+
+    &__item-description {
+
+    }
+}
+.description {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.guitar-section__first-elipse {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.guitar-section__second-elipse {
+    position: absolute;
+    top: 120px;
+    left: 550px;
+    z-index: -1;
+}
+
+.learning-section {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    background-color: $background;
+
+    &__container {
+    
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__elipse {
+        position: absolute;
+        bottom: -80px;
+        right: 500px;
+    }
+}
+
+.content {
+
+    &__text {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+

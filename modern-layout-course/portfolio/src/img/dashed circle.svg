@@ -1,0 +1,42 @@
+<svg width="300" height="412" viewBox="0 0 300 412" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M284 207C284 279.349 225.349 338 153 338C80.6507 338 22 279.349 22 207C22 134.651 80.6507 76 153 76C225.349 76 284 134.651 284 207Z" fill="url(#paint0_radial_38_3)"/>
+<line x1="41.3596" y1="83.6526" x2="213.36" y2="261.653" stroke="black"/>
+<line x1="47.3596" y1="78.6526" x2="219.36" y2="256.653" stroke="black"/>
+<line x1="58.3596" y1="66.6526" x2="230.36" y2="244.653" stroke="black"/>
+<line x1="52.3596" y1="72.6526" x2="224.36" y2="250.653" stroke="black"/>
+<line x1="64.3596" y1="61.6526" x2="236.36" y2="239.653" stroke="black"/>
+<line x1="70.3596" y1="56.6526" x2="242.36" y2="234.653" stroke="black"/>
+<line x1="81.3596" y1="44.6526" x2="253.36" y2="222.653" stroke="black"/>
+<line x1="75.3596" y1="50.6526" x2="247.36" y2="228.653" stroke="black"/>
+<line x1="110.36" y1="17.6526" x2="282.36" y2="195.653" stroke="black"/>
+<line x1="116.36" y1="12.6526" x2="288.36" y2="190.653" stroke="black"/>
+<line x1="127.36" y1="0.652559" x2="299.36" y2="178.653" stroke="black"/>
+<line x1="121.36" y1="6.65256" x2="293.36" y2="184.653" stroke="black"/>
+<line x1="86.3596" y1="39.6526" x2="258.36" y2="217.653" stroke="black"/>
+<line x1="92.3596" y1="34.6526" x2="264.36" y2="212.653" stroke="black"/>
+<line x1="103.36" y1="22.6526" x2="275.36" y2="200.653" stroke="black"/>
+<line x1="97.3596" y1="28.6526" x2="269.36" y2="206.653" stroke="black"/>
+<line x1="0.359561" y1="233.653" x2="172.36" y2="411.653" stroke="black"/>
+<line x1="6.35956" y1="228.653" x2="178.36" y2="406.653" stroke="black"/>
+<line x1="17.3596" y1="216.653" x2="189.36" y2="394.653" stroke="black"/>
+<line x1="11.3596" y1="222.653" x2="183.36" y2="400.653" stroke="black"/>
+<line x1="23.3596" y1="211.653" x2="195.36" y2="389.653" stroke="black"/>
+<line x1="29.3596" y1="206.653" x2="201.36" y2="384.653" stroke="black"/>
+<line x1="40.3596" y1="194.653" x2="212.36" y2="372.653" stroke="black"/>
+<line x1="34.3596" y1="200.653" x2="206.36" y2="378.653" stroke="black"/>
+<line x1="69.3596" y1="167.653" x2="241.36" y2="345.653" stroke="black"/>
+<line x1="75.3596" y1="162.653" x2="247.36" y2="340.653" stroke="black"/>
+<line x1="86.3596" y1="150.653" x2="258.36" y2="328.653" stroke="black"/>
+<line x1="80.3596" y1="156.653" x2="252.36" y2="334.653" stroke="black"/>
+<line x1="45.3596" y1="189.653" x2="217.36" y2="367.653" stroke="black"/>
+<line x1="51.3596" y1="184.653" x2="223.36" y2="362.653" stroke="black"/>
+<line x1="62.3596" y1="172.653" x2="234.36" y2="350.653" stroke="black"/>
+<line x1="56.3596" y1="178.653" x2="228.36" y2="356.653" stroke="black"/>
+<defs>
+<radialGradient id="paint0_radial_38_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(82.5947 100.815) rotate(54.0356) scale(270.228 467.932)">
+<stop stop-color="#DD9200" stop-opacity="0"/>
+<stop offset="0.521736" stop-color="#42A08F" stop-opacity="0.661458"/>
+<stop offset="0.995167" stop-color="#0A0B0B" stop-opacity="0.28"/>
+</radialGradient>
+</defs>
+</svg>

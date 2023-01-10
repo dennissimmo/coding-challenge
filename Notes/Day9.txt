@@ -1,0 +1,19 @@
+Today I decided not to use russian course because its author just copied the main course and translated it, also made some changes,
+used another project for example (domen is different, structure the same), gived a meaningful name for course lessons and add GIT section.
+I have liked English course from the beginning, I initialized project and implement first page, add icon, two headers and button.
+Mostly it was about adding animations, pseoudo classes and transform property. I learned how to center an absolute element inside relative container
+by center X and Y axes and understood how it works, learn new animation properties and animations in general.
+
+
+Yesterday I do not have English lesson so I think that I can spend more time on that beautiful course.
+Also I have to learn some shortcuts which I will notice during development process
+
+Touched themes:
+animation, transform, @keyframes, pseoudo classes and ::after element, 3 pillars of CSS
+
+Conclusion:
+
+1. Started new course (10 lessons passed, environment, header section)
+2. Improved knowledge about above listed properties, techniques
+3. Have to improve speed of taking actions and decisions during building markup / layout
+4. Need to find an app to build multi layout window on Mac (find it finally)

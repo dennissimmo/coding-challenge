@@ -1,0 +1,26 @@
+Today wasn't many practice because I have learned how CSS is parsed by a browser and other advanced staff.
+Now I know which parts passes index.html file before visual rendering in a browser. Browser starts by 
+parsing HTML loading CSS in paralell, by parsed HTML we are getting DOM, the parsing of CSS is done in two stages
+1. Cascade (importance, specificity, source order, resolving conflicts)
+2. Process finall CSS values (converting relative units to pixels + Inheritance)
+As a result we are getting CSS Object Model, this one with DOM is a Render Tree.
+And from this Render Tree browser rendering the visuall formatting model (Border Box, Box Types, Positioning, Stacking Context)
+Also I have converted all 'px' values to 'rem' values.
+
+Because of late start of a working day and some home staff, I spent only 2 hours today and I should go sleep.
+
+
+Touched themes:
+Box Model, Inheritance, Relative Units, Inline elements, rem vs px, Cascade
+
+!Important
+
+Try to make commit before midnight, because in Git history it looks like you missed some days, when you actually aren't.
+
+Conclusion:
+
+1. Started new course (8 lessons more passed)
+2. Improved knowledge about how CSS is parsed and website is rendered
+3. Need to work on better time management (work schedule and sleep routine)
+4. Have to improve speed of taking actions and decisions during building markup / layout
+5. Need to find an app to build multi layout window on Mac (find it finally)

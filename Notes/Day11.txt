@@ -1,0 +1,20 @@
+Regular day almost without a practice. Today was introduction in Sass, I familiared with
+mixins, functions, extends, nesting, variables and how it all looks in clear CSS.
+We discussed how to build clean CSS architecture, rename styles in a BEM manner and 
+configured Sass for our study project.
+
+Today was a hard day at work I woke up at 7 oclock, started my work day at 7:40
+and finished it at 16:20. I came home at 17:00 and was preparing for my English lesson,
+after it was a Speaking club to 20:45, after it I took a rest, ate something,
+and started challenge after 22:00
+
+Touched themes:
+SCSS, Architecture, Components, NPM
+
+Conclusion:
+
+1. Continued course (10 lessons more passed, SCSS)
+2. Get a base of SCSS
+3. Need to work on better time management (work schedule and sleep routine)
+4. Have to improve speed of taking actions and decisions during building markup / layout
+5. Need to find an app to build multi layout window on Mac (find it finally)

@@ -1,0 +1,14 @@
+{
+  "name": "notorous",
+  "version": "1.0.0",
+  "description": "Landing page for learning advanced CSS",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Denchik",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

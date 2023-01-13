@@ -1,0 +1,15 @@
+Today we created a structure of our project, many folders and files, everything on their places.
+I build today custom grid layout based on float property (1, 2, 3, 4 columns)
+Learned about background-clip property, not selector, utility classes and property selector usage
+
+I'm not stopping learning today, just want to make a commit before midnight
+
+Touched themes:
+SCSS, Architecture, Structure, grid, float
+
+Conclusion:
+
+1. Continued course (5 lessons more passed, grid, float)
+2. Builded custom grid layout
+3. Need to find an app to build multi layout window on Mac (find it finally)
+4. Structured project

@@ -1,0 +1,28 @@
+Today was a lot of practice, I've done tours and book sections. Within a tours section,
+we made amazing flip card animation, naturally it just a rotateY() with a perspective, but I 
+understood its conception, I learned how to change other classes when we have applied pseudo class
+for a parent element it can be direct child, or nested child, no matter, also I deeply learn 
+conception of utulity classes and how they can be very useful.
+Shaping figures in combination with a clip path and shape-outside properties give us beautiful
+affect. Box-decoration-break with "clone" property allows to us represent each brake of an element
+as a separate element and apply margin/padding (any property) to them.
+In the Book block I worked with :focus, :checked, :placeholder-show pseudo selectors,
+create custom radio button over default one, replaced styles of default input placeholders with
+::-webkit-input-placehold pseudo element, used "+" and "~" selectors, worked with <video> tag.
+
+Touched themes:
+video, input, perspective, shape-outside, box-decoration-break, front-back side card effect,
+:focus, :checked, selectors, mixing gradients
+
+Conclusion:
+
+1. Continued course (9 lessons more passed)
+2. Learned how to mix backgrounds (blend mode)
+3. Learned how to create flip card effect
+4. Learned how to align text around figures with shape-outside
+5. Learned how replace default styles of input for diffent states (checked, focus, placeholder)
+6. Learned how to create "custom" radio button
+7. You have to pay attention on bottom listed conclusions, you don't follow them
+8. Need to work on better time management (work schedule and sleep routine)
+9. Have to improve speed of taking actions and decisions during building markup / layout
+10. Need to find an app to build multi layout window on Mac (find it finally)

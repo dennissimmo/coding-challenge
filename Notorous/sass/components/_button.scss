@@ -48,6 +48,11 @@
         }
     }
 
+    &_green {
+        background-color: $color-primary-medium;
+        color: $color-white;
+    }
+
     &_animated {
         animation: moveInBottom .5s ease-in .75s;
         animation-fill-mode: backwards;

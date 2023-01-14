@@ -6,10 +6,9 @@
     height: 50rem;
 
     &__side {
-        
         font-size: 3rem;
         height: 50rem;
-        transition: all .8s ease-in;
+        transition: all 3s ease-in;
         position: absolute;
         top: 0;
         left: 0;
@@ -83,7 +82,6 @@
         text-transform: uppercase;
         color: $color-white;
     }
-
 
     &__details {
         width: 85%;

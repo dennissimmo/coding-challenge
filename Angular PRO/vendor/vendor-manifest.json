@@ -43,48 +43,6 @@
         "Location"
       ]
     },
-    "./node_modules/@angular/common/src/common.js": {
-      "id": "./node_modules/@angular/common/src/common.js",
-      "meta": {
-        "harmonyModule": true
-      },
-      "exports": [
-        "PlatformLocation",
-        "LocationStrategy",
-        "APP_BASE_HREF",
-        "HashLocationStrategy",
-        "PathLocationStrategy",
-        "Location",
-        "NgLocaleLocalization",
-        "NgLocalization",
-        "CommonModule",
-        "NgClass",
-        "NgFor",
-        "NgForOf",
-        "NgIf",
-        "NgPlural",
-        "NgPluralCase",
-        "NgStyle",
-        "NgSwitch",
-        "NgSwitchCase",
-        "NgSwitchDefault",
-        "NgTemplateOutlet",
-        "NgComponentOutlet",
-        "AsyncPipe",
-        "DatePipe",
-        "I18nPluralPipe",
-        "I18nSelectPipe",
-        "JsonPipe",
-        "LowerCasePipe",
-        "CurrencyPipe",
-        "DecimalPipe",
-        "PercentPipe",
-        "SlicePipe",
-        "UpperCasePipe",
-        "TitleCasePipe",
-        "VERSION"
-      ]
-    },
     "./node_modules/@angular/common/src/common_module.js": {
       "id": "./node_modules/@angular/common/src/common_module.js",
       "meta": {
@@ -5287,9 +5245,47 @@
       "id": "./node_modules/core-js/modules/_iterators.js",
       "meta": {}
     },
-    "./node_modules/core-js/modules/_keyof.js": {
-      "id": "./node_modules/core-js/modules/_keyof.js",
-      "meta": {}
+    "./node_modules/@angular/common/src/common.js": {
+      "id": "./node_modules/@angular/common/src/common.js",
+      "meta": {
+        "harmonyModule": true
+      },
+      "exports": [
+        "PlatformLocation",
+        "LocationStrategy",
+        "APP_BASE_HREF",
+        "HashLocationStrategy",
+        "PathLocationStrategy",
+        "Location",
+        "NgLocaleLocalization",
+        "NgLocalization",
+        "CommonModule",
+        "NgClass",
+        "NgFor",
+        "NgForOf",
+        "NgIf",
+        "NgPlural",
+        "NgPluralCase",
+        "NgStyle",
+        "NgSwitch",
+        "NgSwitchCase",
+        "NgSwitchDefault",
+        "NgTemplateOutlet",
+        "NgComponentOutlet",
+        "AsyncPipe",
+        "DatePipe",
+        "I18nPluralPipe",
+        "I18nSelectPipe",
+        "JsonPipe",
+        "LowerCasePipe",
+        "CurrencyPipe",
+        "DecimalPipe",
+        "PercentPipe",
+        "SlicePipe",
+        "UpperCasePipe",
+        "TitleCasePipe",
+        "VERSION"
+      ]
     },
     "./node_modules/core-js/modules/_library.js": {
       "id": "./node_modules/core-js/modules/_library.js",
@@ -7673,6 +7669,10 @@
     },
     "./node_modules/zone.js/dist/zone.js": {
       "id": "./node_modules/zone.js/dist/zone.js",
+      "meta": {}
+    },
+    "./node_modules/core-js/modules/_keyof.js": {
+      "id": "./node_modules/core-js/modules/_keyof.js",
       "meta": {}
     }
   }

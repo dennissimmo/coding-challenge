@@ -1,0 +1,23 @@
+Today was fist day when I took lessons from Angular Advanced course, I learned/reminded and most importantly
+did on practice, some functionalities of Content projection, AfterContentInit, ContentChild-ren, ViewChild-ren,
+selectors, practiced Renderer (old version). Learned how to create Dynamic components and inject it in some
+template placeholder, how get its properties and methods, reordering and destroying it.
+Learned how to create a custom template with <ng-template> and pass some context to it, also did the same
+with ngTemplateOutlet directive.
+Last but not least, better understood how differ Change Detection modes, especially when @Input value changes.
+
+
+Touched themes:
+Content Projection, Dynamic Components, TemplateRef, ContainerRef, ElementRef, Renderer, Change Detection, 
+View Encapsulation
+
+Conclusion:
+
+1. Started Angular course (25 lessons more passed)
+2. Reminded/learned details of ViewChild-ren, ContentChild-ren, Change Detection, ViewEncapsulation, etc.
+3. Continued Advanced CSS course (3 lessons passed more)
+4. Created footer, animation, navigation, positioning of hamburger menu
+5. You have to pay attention on bottom listed conclusions, you don't follow them
+6. Need to work on better time management (work schedule and sleep routine)
+7. Have to improve speed of taking actions and decisions during building markup / layout
+8. Need to find an app to build multi layout window on Mac (find it finally)

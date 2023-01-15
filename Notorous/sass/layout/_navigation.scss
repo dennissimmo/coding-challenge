@@ -1,0 +1,96 @@
+.navigation {
+
+    &__checkbox {
+        display: none;
+
+    }
+
+    &__button {
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        z-index: 102;
+        box-shadow: 0 1rem 3rem rbga($color-black, .5);
+    }
+
+    &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        position: fixed;
+        right: 6.5rem;
+        top: 6.5rem;
+        z-index: 100;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+
+        // transform: scale(80);
+    }
+
+    &__nav {
+        height: 100vh;
+        // width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 101;
+
+        opacity: 0;
+        width: 0;
+        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__list {
+        @include center-both-axes;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            color: $color-white;    
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            // solid gradient
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            background-size: 220%;
+            transition: all .4s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary-light;
+            transform: translateX(-1rem);
+        }
+
+        span {
+            margin-right: 1rem;
+            display: inline-block;
+        }
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+}

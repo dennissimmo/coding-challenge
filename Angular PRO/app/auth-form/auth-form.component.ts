@@ -5,7 +5,7 @@ import {
   ContentChild,
   AfterContentInit,
   ContentChildren,
-  ViewChild, AfterViewInit
+  ViewChild, AfterViewInit, ViewChildren, QueryList
 } from '@angular/core';
 
 import { AuthRememberComponent } from "./auth-remember.component";
@@ -38,7 +38,7 @@ import {AuthMessageComponent} from "./auth-message.component";
 })
 export class AuthFormComponent implements AfterContentInit, AfterViewInit {
 
-  @ViewChild(AuthMessageComponent) messageComponent: AuthMessageComponent;
+  @ViewChildren(AuthMessageComponent) messageComponent: QueryList<AuthMessageComponent>;
   @ContentChild(AuthRememberComponent) rememberComponent: AuthRememberComponent;
 
   showMessage: boolean;
@@ -50,14 +50,18 @@ export class AuthFormComponent implements AfterContentInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-
-
+    // View Children are only available in ngAfterViewInit
+    if (this.messageComponent) {
+      // It will throw an error (only in development) because we are mutating data,
+      // after the view has been completed
+      this.messageComponent.forEach((message:AuthMessageComponent) => {
+        message.days = 30;
+      });
+      // We can fix it with setTimeout() or .detectChanges() method of ChangeDetector
+    }
   }
 
   ngAfterContentInit(): void {
-    if (this.messageComponent) {
-      this.messageComponent.days = 30;
-    }
     if (this.rememberComponent) {
       this.rememberComponent.checked.subscribe((checked: boolean) => {
         this.showMessage = checked;

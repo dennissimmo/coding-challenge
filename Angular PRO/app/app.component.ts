@@ -16,36 +16,26 @@ import {ViewContainerRef_} from "@angular/core/src/linker/view_container_ref";
   selector: 'app-root',
   template: `
     <div>
-      <div #entry></div>
+      <ng-container [ngOutletContext]="ctx" [ngTemplateOutlet]="tmpl">
+      </ng-container>
       <template #tmpl let-city let-location="location">
         {{ city + ' : ' + location }}
       </template>
     </div>
   `
 })
-export class AppComponent implements AfterContentInit {
+export class AppComponent {
 
-  component: ComponentRef<AuthFormComponent>;
+  ctx = {
+    $implicit: 'English',
+    location: 'UK'
+  }
 
   @ViewChild('entry', { read: ViewContainerRef }) entry: ViewContainerRef;
   @ViewChild('tmpl') tmpl: TemplateRef<any>;
 
   constructor(
   ) {
-  }
-
-  loginUser(user: User) {
-    console.log('Login', user);
-  }
-
-  ngAfterContentInit(): void {
-    this.entry.createEmbeddedView(
-        this.tmpl,
-        {
-          $implicit: 'London',
-          location: 'UK'
-        }
-    );
   }
 
 }

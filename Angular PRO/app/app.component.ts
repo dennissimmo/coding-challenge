@@ -2,7 +2,7 @@ import {
   AfterContentInit,
   Component,
   ComponentFactoryResolver,
-  ComponentRef,
+  ComponentRef, TemplateRef,
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
@@ -16,13 +16,10 @@ import {ViewContainerRef_} from "@angular/core/src/linker/view_container_ref";
   selector: 'app-root',
   template: `
     <div>
-      <button (click)="destroyComponent()">
-        Destroy
-      </button>
-      <button (click)="moveComponent()">
-        Move Component
-      </button>
       <div #entry></div>
+      <template #tmpl let-city let-location="location">
+        {{ city + ' : ' + location }}
+      </template>
     </div>
   `
 })
@@ -31,9 +28,9 @@ export class AppComponent implements AfterContentInit {
   component: ComponentRef<AuthFormComponent>;
 
   @ViewChild('entry', { read: ViewContainerRef }) entry: ViewContainerRef;
+  @ViewChild('tmpl') tmpl: TemplateRef<any>;
 
   constructor(
-      private resolver: ComponentFactoryResolver
   ) {
   }
 
@@ -42,20 +39,13 @@ export class AppComponent implements AfterContentInit {
   }
 
   ngAfterContentInit(): void {
-    const authFormFactory = this.resolver.resolveComponentFactory(AuthFormComponent);
-    this.entry.createComponent(authFormFactory);
-    // compile time reordering
-    this.component = this.entry.createComponent(authFormFactory, 0);
-    this.component.instance.title = 'Create account';
-    this.component.instance.submitted.subscribe(this.loginUser);
+    this.entry.createEmbeddedView(
+        this.tmpl,
+        {
+          $implicit: 'London',
+          location: 'UK'
+        }
+    );
   }
 
-  destroyComponent() {
-    this.component.destroy();
-  }
-
-  moveComponent() {
-    // runtime reordering
-    this.entry.move(this.component.hostView, 1);
-  }
 }

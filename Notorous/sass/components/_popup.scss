@@ -1,0 +1,85 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color-black, .8);
+    z-index: 103;
+    // with display:none we cannot set animation
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &__content {
+        width: 75%;
+        @include center-both-axes;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .5);
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;// for fixing image overlapping border radius
+        opacity: 0;
+        // we duplicate style here, because we cannot have 
+        // two separate tranform declarations
+        transform: translate(-50%, -50%) scale(.5);
+        transition: all .4s .2s;
+    }
+
+    &__left {
+        width: 33.3333%;
+        display: table-cell;
+    }
+
+    &__right {
+        width: 66.6666%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-dark-main;
+        hyphens: auto;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            display: inline-block;
+            text-transform: none;
+            transition: all .3s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+}

@@ -24,3 +24,16 @@ $grid-width: 114rem;
 $grid-vertical-gap: 8rem;
 $grid-horizontal-gap: 6rem;
 
+// Breakpoints
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet lanscape
+[1200 - 1800] is where our normal styles are aplied
+1800px + : Big desktop
+*/
+$phone: 37.5em; // 600px
+$tablet-portative: 56.25em; // 900px;
+$tablet-landscape: 75em; // 1200px;
+$big-desktop: 112.5em; // 1800px;
+

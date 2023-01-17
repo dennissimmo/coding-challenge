@@ -12,3 +12,50 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+// Media query manager
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet lanscape
+[1200 - 1800] is where our normal styles are aplied
+1800px + : Big desktop
+*/
+
+@mixin respond-phone {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+/*
+    $breakpoint argument choices::after
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+
+    ORDER: Base + typography > general layout + grid > page layout > components
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: $phone) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: $tablet-portative) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: $tablet-landscape) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        @media (max-width: $big-desktop) {
+            @content;
+        }
+    }
+}

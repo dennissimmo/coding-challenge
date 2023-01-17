@@ -1,0 +1,20 @@
+Today I had a Spekiang Club and after it I couldn't manage my time in a proper way, and have finished
+paying taxes only by 22:30 and started course over 23 oclock. Today I learned about how media query
+max-width, min-width are working, mobile first and desktop first approaches and build up a mixin
+manager, which allow us to easily update our website for different devices. Also I have created a popup
+by using only SCSS and HTML.
+
+I noticed that it looks something weird when course is a bit outdated and you still using float 
+properties to build grid, whereas there are GRID and FLEX technologies.
+
+Touched themes:
+Adaptive Design, media queries, @mixin, @if, :target, Popup, hamburger icon animation
+
+Conclusion:
+
+1. Continue Advanced SCSS course (9 lessons more passed)
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

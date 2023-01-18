@@ -39,22 +39,22 @@
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: $phone) {
+        @media only screen and (max-width: $phone) {
             @content;
         }
     }
     @if $breakpoint == tab-port {
-        @media (max-width: $tablet-portative) {
+        @media only screen and (max-width: $tablet-portative) {
             @content;
         }
     }
     @if $breakpoint == tab-land {
-        @media (max-width: $tablet-landscape) {
+        @media only screen and (max-width: $tablet-landscape) {
             @content;
         }
     }
     @if $breakpoint == big-desktop {
-        @media (max-width: $big-desktop) {
+        @media only screen and (max-width: $big-desktop) {
             @content;
         }
     }

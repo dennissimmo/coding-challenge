@@ -11,6 +11,12 @@
     visibility: hidden;
     transition: all .3s;
 
+    @supports ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .2);
+    }
+
     &__content {
         width: 75%;
         @include center-both-axes;
@@ -27,12 +33,12 @@
     }
 
     &__left {
-        width: 33.3333%;
+        width: 40%;
         display: table-cell;
     }
 
     &__right {
-        width: 66.6666%;
+        width: 60%;
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
@@ -79,6 +85,31 @@
 
         &:hover {
             color: $color-primary-light;
+        }
+    }
+
+    @include respond(phone) {
+
+        &__content {
+            width: 75%;
+            display: block;
+        }
+
+        &__left {
+            display: block;
+            width: 100%;
+            padding: 3rem 5rem 0 5rem;
+        }
+
+        &__right {
+            width: 60%;
+            vertical-align: middle;
+            padding: 3rem 5rem;
+        }
+
+        &__img {
+            display: inline-block;
+            width: 49%;
         }
     }
 

@@ -1,0 +1,21 @@
+This 4 hours were for @media queries and adaptive images. To be honest I completed Day 16 at the next day,
+because yesterday I had a meeting with friends in one of our local pubs. I learned some things how to more 
+optimize media queries, handle supporting some properties by browsers, how to combine, separate query conditions.
+There was a big block about responsive images, their configuration through HTML for <img/>, or through CSS, it 
+allows to us load different images based on 'display density', 'display width', set images width based on some media queries.
+Also we have configured some additional scripts for different tasks and created global one in order to build project.
+
+Also I do not have time to complete Day 17 where I was due to it, because I have wake up tommorow early, so tommorow I have
+complete tasks for 2 days and spend minimum 4 hours on it.
+
+Touched themes:
+responsive images, media queries, @supports, only screen, ::selection, scripts
+
+Conclusion:
+
+1. Continue Advanced SCSS course (8 lessons more passed)
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

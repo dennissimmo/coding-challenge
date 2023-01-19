@@ -1,0 +1,21 @@
+Today's two hours were mostly about Flex Box, we learned all main properties of it, which value
+takes by default "flex" property, in which order set its values and considered its usage as best practice.
+I learned that there might be some problems with icon font and proffesional solution for icons is using SVG icons.
+We initialized new project and created header and half of a sidebar. I am actively using CSS variables
+in that project because it has some advantages over SASS ones. By the next day I plan to finish
+flex section at all and then only flex box section lefts.
+
+Day 18 already will be finished after midnight in order to align in row days.
+
+Touched themes:
+CSS variables, Flex Box container, elements, conception, SVG
+
+
+Conclusion:
+
+1. Continue Advanced SCSS course (10 lessons more passed)
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

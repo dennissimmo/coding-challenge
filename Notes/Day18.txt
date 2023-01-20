@@ -1,0 +1,19 @@
+In the second part of Flexbox, we implemented left right animation with help fo ::before pseudo element,
+learned about "currentColor" and "fill" property of an SVG icon, created infinity pulsing animation,
+used SVG icons in CSS together with "mask-image", mastered Flex Box, how margin: auto works on flex items
+ and implemented all sections of project. Next step is writing media queries and we can move to GRID section
+
+It probably was the easiest part for me as Flex Box it something which I knew the best except "flex" property itself, but now I
+understand how it works and how to use it.
+
+Touched themes:
+mask-image, SVG in CSS, complex animation, fill and currentColor, transform-origin
+
+Conclusion:
+
+1. Continue Advanced SCSS course (7 lessons more passed)
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

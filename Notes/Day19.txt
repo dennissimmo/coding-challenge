@@ -1,0 +1,22 @@
+Today I spent more 4 hours on finishing Flex project and some additional staff, I have tested
+on mobile project from my main job 30% functionality of which I have implemented by myself,
+also I have configured ngrok for VS code (installed extension) so now can test my study
+projects on phone as well. After writing media queries for Flex project, I've implemented
+menu on hover user name with select and messages popup as in Facebook on hover messages icon,
+and did "suggestions" for input when user starts typing.
+
+Last step left, GRID technology.
+Probably I will take GRID section from another author, just for better understanding 
+and to find new approach to studying and building layouts.
+
+Touched themes:
+Advanced selectors, responsive layout, flex properties 
+
+Conclusion:
+
+1. Finished Flex Box section
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

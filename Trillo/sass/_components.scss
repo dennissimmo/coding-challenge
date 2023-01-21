@@ -12,6 +12,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--grey-light-2);
+    }
 
     &__input {
         font-family: inherit;
@@ -31,16 +38,22 @@
             background-color: var(--grey-light-3);
         }
 
+        
         &::-webkit-input-placeholder {
             font-weight: 100;
             color: var(--grey-light-4);
-
         }
+        
     }
 
     &__input:focus + &__button {
         background-color: var(--grey-light-3);
     }
+
+    &__input:focus:not(:placeholder-shown) ~ .suggestions {
+        display: flex;
+    }
+
 
     &__button {
         border: none;
@@ -59,6 +72,36 @@
         height: 2rem;
         width: 2rem;
         fill: var(--grey-dark-3);
+    }
+
+    .suggestions {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        height: 20rem;
+        top: 100%;
+        left: 2rem;
+        padding-left: 1rem;
+        width: 90%;
+        background-color: var(--grey-light-2);
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+
+		&__item {
+            font-size: inherit;
+            position: relative;
+
+            &:hover::before {
+                content: '';
+                left: -1rem;
+                position: absolute;
+                display: inline-block;
+                height: 100%;
+                width: 0.5rem;
+                background-color: var(--color-primary);
+            }
+		}
     }
 }
 
@@ -83,6 +126,14 @@
 
     &__icon-box {
         position: relative;
+    }
+
+    &__icon-box_2 {
+        position: relative;
+    }
+
+    &__icon-box_2:hover .message-box {
+        display: block;
     }
 
     &__icon {
@@ -111,7 +162,131 @@
         border-radius: 50%;
         margin-right: 1rem;
     }
+
+    &__user {
+        position: relative;
+    }
+
+    &__user:hover &__menu {
+        opacity: 1;
+        background-color: var(--grey-light-3);
+    }
+
+    &__menu {
+        opacity: 0;
+        transition: opacity .2s;
+
+    }
 }
+
+.message-box {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 90%;
+    background-color: var(--grey-light-2);
+    width: 30rem;
+    right: 0;
+    padding: 2rem 1.5rem; 
+    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, .25);
+
+    &__header {
+        font-weight: 600;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__chips {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    &__chip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        height: 3rem;
+        border-radius: 100px;
+        font-size: 1.8rem;
+        color: var(--color-primary);
+
+        &_active {
+            background-color: rgba(#FF3366, 0.1);
+        }
+    }
+
+    &__subheader {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-item {
+        display: flex;
+        padding: 1rem 0;
+    }
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        outline: 1px solid var(--grey-dark-3);
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-weight: 400;
+    }
+
+    &__date {
+        color: var(--color-primary-light)
+    }
+}
+
+
+.menu-list {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    
+    &__item {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--grey-light-4);
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        align-self: flex-start;
+        margin-right: 1rem;
+    }
+
+    &__text {
+    }
+}
+
 
 // Side navigation
 
@@ -120,11 +295,25 @@
     list-style: none;
     margin-top: 2.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: 0.5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
+            margin-bottom: 0;
         }
     }
 
@@ -163,6 +352,16 @@
         padding: 1.5rem 3rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
     }
 
     &__icon {
@@ -170,6 +369,13 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: .3rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -179,6 +385,10 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--grey-light-4);
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }
 
 
@@ -209,6 +419,11 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
     }
 
     &__stars {
@@ -243,16 +458,28 @@
         flex-direction: column;
         align-items: center;
         gap: .5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
     }
 
     &__rating-average {
         font-size: 2.5rem;
         font-weight: 300;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+        }
     }
 
     &__rating-count {
         font-size: 0.8rem;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 0.6rem;
+        }
     }
 }
 
@@ -331,13 +558,16 @@
         margin-right: 7px;
 
         // old approach
-        // background-image: url(../img/chevron-thin-right.svg);
-        // background-size: cover;
-        background-color: var(--color-primary);
-        mask-image: url(../img/chevron-thin-right.svg);
-        mask-size: c;
-        -webkit-mask-image: url(../img/chevron-thin-right.svg);
-        -webkit-mask-size: cover;
+        background-image: url(../img/chevron-thin-right.svg);
+        background-size: cover;
+        @supports (-webkit-mask-image: url()) or (mask-image: url())  {
+            background-color: var(--color-primary);
+            mask-image: url(../img/chevron-thin-right.svg);
+            mask-size: cover;
+            -webkit-mask-image: url(../img/chevron-thin-right.svg);
+            -webkit-mask-size: cover;
+            background-image: none;
+        }
     }
 }
 
@@ -353,6 +583,7 @@
     }
 
     &__friends {
+        display: flex;
     }
 
     &__photo {
@@ -363,7 +594,7 @@
         border: 3px solid #fff;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -375,6 +606,11 @@
     margin-bottom: 3.5rem;
     position: relative;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text {
         position: relative;
@@ -434,6 +670,10 @@
 .cta {
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2.5rem 0;
+    }
 
     &__book-now {
         text-transform: uppercase;

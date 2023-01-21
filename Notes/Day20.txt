@@ -1,0 +1,20 @@
+Today I spent more 5.5 hours on GRID technology, I learned its concept and example usages, considered all properties of GRID,
+and built few GRID layouts during project implemenation. Also fixed some problems with gulp, Mac really sucks with installation of npm packages, constantly 
+some problems. GRID technology is very powerful, minmax(), auto-fit, auto-fill, min-content, max-content properties allow to us do not right media queries
+at all for our GRID layouts and I suppose together with clamp() for gap it can be even more powerful. As it was my second time when I decided to learn GRID,
+I should remember about 40% of theory and 20% of practice, but after course must practice it more and more.
+
+Strange ending of day, I've started at 6 p.m and finished at 1 a.m, I have to wake up at 7 a.m, because I gonna play footbal at 8 a.m, again my sleep routine
+sucks, from tommorow I should buit a sleep routine and follow it.
+
+Touched themes:
+grid, minmax(), debugger in Firefox, min-content, max-content, auto-fit/fill, fraction unit, repeat(), auto-rows/columns 
+
+Conclusion:
+
+1. Almost finished course (1 hour of content left)
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

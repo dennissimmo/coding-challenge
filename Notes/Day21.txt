@@ -1,0 +1,16 @@
+I have finished CSS Advanced course today, there were last lessons with GRID, to be honest I passed some lessons without strong focus and concius,
+because I feel myself very tired, because I played footbal today and walk a lot. Yeasterday I will create total review note of this course.
+Also I spent almost 3 hours on preparation for Angular Interview, discovered new things about lifecycle hooks, async pipe and Injector tree.
+Also I had speaking club today and visit cinema at night, so it was obvious that I would not be able to finish course appropriately.
+
+Touched themes:
+grid, minmax(), debugger in Firefox, min-content, max-content, auto-fit/fill, fraction unit, repeat() 
+
+Conclusion:
+
+1. Finished CSS Advanced course
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

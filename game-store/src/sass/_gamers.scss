@@ -1,4 +1,42 @@
 .gamers {
     background-color: $color-blue-dark;
     grid-column: col-start 7 / full-end;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-gap: 4rem 2rem;
+    align-content: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        justify-items: center;
+        padding: 5rem 0;
+    }
+
+    &__title {
+        grid-column: 1 / -1;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+    }
+
+    &__img {
+        width: 7rem;
+    }
+
+    &__text {
+        align-self: center;
+        
+    }
+
+    &__score {
+        font-size: 1.6rem;
+        color: $color-gray-dark;
+        font-weight: 300;
+    }
 }

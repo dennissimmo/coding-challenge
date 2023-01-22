@@ -1,4 +1,55 @@
 .header {
     background-color: $color-blue-dark;
     grid-column: full-start / col-end 6;
+    padding: 5rem 0 5rem 6rem;
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr;
+    background-image: url(../icons/header-bg.png);
+    @include respond(tab-port) {
+        grid-column: full-start / full-end;
+    }
+
+    &__line-text {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: $color-gray-dark;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        grid-gap: 2rem;
+        margin-bottom: 1rem;
+
+        &::before, &::after {
+            content: '';
+            height: 0.1rem;
+            display: block;
+            background-color: $color-green-dark;
+        }
+    }
+
+    &__img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    &__img img {
+        height: 2.5rem;
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
+}
+
+.logo {
+    display: block;
+    margin-bottom: 8rem;    
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
 }

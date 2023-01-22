@@ -16,6 +16,9 @@
             width: 100%;
             grid-column: 3 / 15;
             grid-row: 3 / 12;
+            @include respond(tab-port) {
+                grid-row: 3 / 10;
+            }
         }
 
         &__img-2 {
@@ -23,6 +26,9 @@
             grid-column: 5 / -1;
             grid-row: 9 / 24;
             transform: translateX(3rem);
+            @include respond(tab-port) {
+                grid-row: 6 / 19;
+            }
         }
     }
 
@@ -35,6 +41,11 @@
         background-color: $color-blue-dark;
         
         padding: 0 4vw; // dynamic padding based on screen width
+        @include respond(tab-port) {
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;
+            grid-column: col-start 5 / full-end;
+        }
 
         &__text {
             margin-bottom: 4rem;

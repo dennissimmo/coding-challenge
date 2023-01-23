@@ -1,0 +1,17 @@
+Today was day of theory. I have covered such themes as AOT vs JIT, Server Side Rendering, Lifecycle Hooks, Dependency Injection mechanism,
+Injector types, Conception of Hierarchical Injector in Angular, Resolution and resolving dependencies, Change Detection, Forms, Forms Validation
+and Standalone Components feature in Angular 14.
+Also I've update my CV and wrote down about another my experience with Angular in a team of 6 members, my leadership and proactiveness.
+After this commit I gonna pass one more section of Englis for IT course on EnglishDom
+
+Touched themes:
+Change Detection, Server Side Rendering, Forms, Dependency Injection, Compilation types, etc.
+
+Conclusion:
+
+1. Covered many Angular topics
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

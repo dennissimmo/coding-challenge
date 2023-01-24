@@ -1,0 +1,15 @@
+Today was almost day of theory with a bit practice with Generics in TypeScript, I have covered many TS related questions about 
+Generics, Mapped Types, Type, Interfaces, any vs unknown, Utility Types, also I refresh knowledge about RXJS library, update my notes and destructured it.
+After this commit I gonna pass one more section of Englis for IT course on EnglishDom
+
+Touched themes:
+Generics, Ambient Declarations, Hot vs Cold Observables, Memory leaks, flattening operators, Subjects, ...
+
+Conclusion:
+
+1. Covered TypeScript related topics and RXJS related topics, conception and usage in Angular
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

@@ -754,7 +754,7 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem; }
-  .plan__side {
+  .card__side {
     font-size: 3rem;
     height: 50rem;
     transition: all .8s ease-in;
@@ -767,34 +767,34 @@ body {
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); }
-    .plan__side_front {
+    .card__side_front {
       background-color: #fff; }
-    .plan__side_back {
+    .card__side_back {
       transform: rotateY(180deg); }
-      .plan__side_back_1 {
+      .card__side_back_1 {
         background: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .plan__side_back_2 {
+      .card__side_back_2 {
         background: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      .plan__side_back_3 {
+      .card__side_back_3 {
         background: linear-gradient(to right bottom, #2998ff, #5641fa); }
-  .card:hover .plan__side_front {
+  .card:hover .card__side_front {
     transform: rotateY(-180deg); }
-  .card:hover .plan__side_back {
+  .card:hover .card__side_back {
     transform: rotateY(0); }
-  .plan__picture {
+  .card__picture {
     background-size: cover;
     height: 25rem;
     background-blend-mode: screen;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-    .plan__picture_1 {
+    .card__picture_1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
-    .plan__picture_2 {
+    .card__picture_2 {
       background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg"); }
-    .plan__picture_3 {
+    .card__picture_3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5641fa), url("../img/nat-7.jpg"); }
-  .plan__heading {
+  .card__heading {
     top: 12rem;
     left: 2rem;
     width: 80%;
@@ -804,43 +804,43 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     color: #fff; }
-  .plan__details {
+  .card__details {
     width: 85%;
     margin: 0 auto;
     padding: 1rem; }
-  .plan__list {
+  .card__list {
     font-size: 1.5rem;
     list-style: none; }
-    .plan__list-item {
+    .card__list-item {
       text-align: center;
       padding: 1rem; }
-      .plan__list-item:not(:last-child) {
+      .card__list-item:not(:last-child) {
         border-bottom: 2px solid #f7f7f7; }
-  .plan__heading-span {
+  .card__heading-span {
     padding: 1rem 1.5rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone; }
-    .plan__heading-span_1 {
+    .card__heading-span_1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
-    .plan__heading-span_2 {
+    .card__heading-span_2 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
-    .plan__heading-span_3 {
+    .card__heading-span_3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 65, 250, 0.8)); }
-  .plan__cta {
+  .card__cta {
     width: 90%;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .plan__price-box {
+  .card__price-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; }
-  .plan__price-only {
+  .card__price-only {
     font-size: 2.5rem;
     text-transform: uppercase; }
-  .plan__price-value {
+  .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
   @media (max-width: 56.25em) {
@@ -849,23 +849,23 @@ body {
       height: auto;
       border-radius: 3px;
       background-color: #fff; }
-      .plan__side {
+      .card__side {
         height: auto;
         position: relative;
         box-shadow: none; }
-        .plan__side_front {
+        .card__side_front {
           background-color: #fff; }
-        .plan__side_back {
+        .card__side_back {
           transform: rotateY(0);
           -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
                   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-      .card:hover .plan__side_front {
+      .card:hover .card__side_front {
         transform: rotateY(0); }
-      .card:hover .plan__side_back {
+      .card:hover .card__side_back {
         transform: rotateY(0); }
-      .plan__details {
+      .card__details {
         padding: 1rem 3rem; }
-      .plan__cta {
+      .card__cta {
         width: 100%;
         text-align: center;
         position: relative;
@@ -873,9 +873,9 @@ body {
         left: 0;
         transform: translate(0);
         padding: 7rem 4rem 4rem 4rem; }
-      .plan__price-box {
+      .card__price-box {
         margin-bottom: 3rem; }
-      .plan__price-value {
+      .card__price-value {
         font-size: 4rem; } }
 
 .story {

@@ -1,0 +1,13 @@
+Today I was repeating JS and started implementing new HTML layout
+
+Touched themes:
+Functions, Objects, scope, copying objects, immutability
+
+Conclusion:
+
+1. Refresh knowledge about base part of JS
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

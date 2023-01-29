@@ -1,0 +1,15 @@
+Refreshed knowledge about Directives, Services and Forms. I have confirmed that we can use TS classes in Angular without marking
+them with @Injectable() if we don't inject another services inside it service.
+Also I have continued learning an NGRX, on practice and my goal it get practice and deep knowledge with understanding of each concept
+
+Touched themes:
+BEM, layout analyze, gap, adaptive value
+
+Conclusion:
+
+1. Refresh answers on some interview questions about an Angular
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

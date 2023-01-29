@@ -1,0 +1,16 @@
+The first part of this lesson I've started 26.01.2023 and finished 29.01.2023. There we have implemented
+header and first section and made it responsive for all devices.
+I learned how to edit some class when we are calling to some elements itself .menu_open & {} and worked with adaptive value.
+Also we made adaptive scroll, during scrolling it has one height after scrolling another height.
+
+Touched themes:
+BEM, layout analyze, gap, adaptive value
+
+Conclusion:
+
+1. Made 2 sections of layout, consolidate knowledge on practice
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

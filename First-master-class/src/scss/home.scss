@@ -1,3 +1,111 @@
 //====================================================================================================
+.main-block {
+    @include adaptiveValue("padding-top", 307, 100);
+    @include adaptiveValue("padding-bottom", 100, 40);
+
+    // .main-block__container
+
+    &__container {
+        display: flex;
+
+        @media screen and (max-width: $mobile) {
+            flex-direction: column;
+            gap: rem(30);
+        }
+    }
+
+    // .main-block__content
+
+    &__content {
+        align-self: center;
+        flex: 1 1 auto;
+        @include adaptiveValue("padding-right", 80, 20);
+
+        @media screen and (min-width: $mobile) {
+           
+        }
+
+    }
+
+    // .main-block__imager
+
+    &__imager {
+        flex: 0 0 math.div(478, 1180) * 100%;
+        text-align: center; 
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.content-main {
+    display: grid;
+
+    gap: rem(40);
+    @include adaptiveValue("gap", 40, 20);
+    // .content-main__name
+
+    &__name {
+        color: $indigo;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: rem(20);
+        font-size: rem(20);
+        line-height: math.div(28, 18);
+
+        @media screen and (min-width: $mobile) {
+            &::before {
+                content: '';
+                flex: 0 0 102px;
+                height: 1px;
+                background-color: $indigo;
+            }
+        }
+
+
+    }
+
+    // .content-main__title
+
+    &__title {
+        font-weight: 700;
+        color: $mainColor;
+        @include adaptiveValue("font-size", 72, 34);
+    }
+
+    // .content-main__text
+
+    &__text {
+        font-weight: 400;
+        line-height: math.div(28, 18);
+        color: $grey;
+    }
+
+    // .content-main__buttons
+
+    &__buttons {
+        display: flex;
+        gap: rem(20);
+        flex-wrap: wrap;
+    }
+
+    // .content-main__button
+
+    &__button {
+        @media  screen and (max-width: $mobileSmall) {
+            flex: 1 1 auto;
+        }
+    }
+
+    // .content-main__info
+
+    &__info {
+        color: $grey;
+        border-top: 1px solid $grey;
+        font-size: rem(12);
+        line-height: math.div(16, 12);
+        padding: rem(20) 0 0 0;
+    }
+}
 
 //====================================================================================================

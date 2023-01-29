@@ -137,3 +137,10 @@ body {
 // Подключение стилей отдельных страниц
 @import "home";
 
+.page {
+
+    // .page__section
+
+    &__section {
+    }
+}

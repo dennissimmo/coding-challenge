@@ -1,14 +1,36 @@
 //<BUTTONS (a.btn+tab)>
 // Снипет (HTML): btn
 
-.button {
+.btn {
+	border: 1px solid $indigo;
 	display: inline-flex;
-	padding: 0px 0px;
+	justify-content: center;
+	border-radius: 6px;
+	padding: rem(11) rem(32);
+	font-weight: 500;
+	color: $indigo;
+	line-height: math.div(28, 18);
+	transition: 0.3s all;
+
 	@media (any-hover: hover) {
 		&:hover {
+			background-color: $indigo;
+			color: #fff;
 		}
 	}
 	&._fw {
 		width: 100%;
+	}
+
+	&_bg {
+		background-color: $indigo;
+		color: #fff;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: transparent;
+				color: $indigo;
+			}
+		}
 	}
 }

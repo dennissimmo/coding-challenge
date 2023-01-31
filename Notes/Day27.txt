@@ -1,0 +1,16 @@
+I've started learning of NGRX with a new syntax (I already made some study project with old syntax).
+Identified advantages of using NGRX, described Flux concept and initialized project. 
+Also I have created few Actions for CUD Categories and one Reducer for handling affect on State each of its actions.
+Next steps are : Selectors, Modyfiyng State and working with Side Effects
+
+Touched themes:
+BEM, layout analyze, gap, adaptive value
+
+Conclusion:
+
+1. Structured knowledge about NGRX, understood its purpose, created Actions and Reducer
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

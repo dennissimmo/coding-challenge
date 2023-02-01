@@ -1,0 +1,13 @@
+I've finished master class layout, learn some approaches when you can easily use grid and do not write excessive code.
+
+Touched themes:
+BEM, layout analyze, gap, adaptive value
+
+Conclusion:
+
+1. Finished layout
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

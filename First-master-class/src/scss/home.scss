@@ -238,12 +238,13 @@
     // .clients__items
 
     &__items {
-        
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr));
         align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr));
+
         text-align: center;
         gap: rem(25);
+
     }
 
     // .clients__item
@@ -277,8 +278,10 @@
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: rem(30);
+        @media screen and (min-width: $mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     // .gallery__item
@@ -294,13 +297,16 @@
     }
 
     &_col-2 {
-        grid-column: span 2;
-        .item-gallery__image-ibg {
-            padding: 0 0 percent(400, 1180) 0px;
+        @media screen and (min-width: $mobile) {
+            grid-column: span 2;
+            .item-gallery__image-ibg {
+                padding: 0 0 percent(400, 1180) 0px;
+            }
         }
     }
 
     @media (any-hover: hover) {
+        
         &:hover {
             .item-gallery__content {
                 visibility: visible;
@@ -314,6 +320,10 @@
     &__image-ibg {
         padding: 0 0 percent(464, 620) 0px;
         height: 100%;
+
+        @media (max-width: $mobile) {
+            padding: 0 0 percent(620, 620) 0px;
+        }
     }
 
     // .item-gallery__content
@@ -350,6 +360,135 @@
     }
 }
 
+// Advantages
+.advantages {
+
+    @include adaptiveValue("padding-top", 75, 30);
+    @include adaptiveValue("padding-bottom", 75, 30);
+
+    // .advantages__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+        @include adaptiveValue("column-gap", 60, 20);
+        row-gap: rem(60);
+    }
+
+    // .advantages__item
+
+    &__item {
+        display: grid;
+        justify-items: center;
+    }
+
+    // .advantages__icon
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #eef2ff;
+        border-radius: 6px;
+        width: rem(140);
+        height: rem(140);
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 40, 20);
+        }
+    }
+
+    // .advantages__title
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(30);
+        line-height: math.div(36, 30);
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 20, 15);
+        }
+    }
+
+    // .advantages__text
+
+    &__text {
+        color: $grey;
+        line-height: math.div(20, 18);
+    }
+}
+
+.careers {
+
+    @include adaptiveValue("padding-top", 75, 30);
+    @include adaptiveValue("padding-bottom", 150, 30);
+
+    // .careers__container
+
+    &__container {
+    }
+
+    // .careers__title
+
+    &__title {
+        @include adaptiveValue("margin-bottom", 150, 20)
+    }
+
+    // .careers__table
+
+    &__table {
+    }
+}
+
+.table {
+    color: $grey;
+    @media (max-width: $mobile) {
+        overflow: auto;
+    }
+
+    // .table__item
+
+    &__item {
+        width: 100%;
+        min-width: rem(750);
+        border-collapse: collapse;
+    }
+
+    // .table__row
+
+    &__row {
+        &:not(:last-child) {
+            .table__title,
+            .table__cell {
+                @include adaptiveValue("padding-bottom", 80, 15);
+            }
+        }
+    }
+
+    // .table__title
+
+    &__title {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: math.div(24, 16);
+        &:not(:last-child) {
+            padding-right: rem(15);
+        }
+    }
+
+    // .table__cell
+
+    &__cell {
+        span {
+            font-weight: 600;
+            color: $mainColor;
+        }
+
+        &:not(:last-child) {
+            padding-right: rem(15);
+        }
+    }
+}
 
 
 

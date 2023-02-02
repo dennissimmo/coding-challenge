@@ -1,0 +1,18 @@
+I have finished 7th Chapter of NGRX book. It wasn't so hard, but what was hard is dealing with strict mode of TypeScript
+and setting types for NGRX entities. I don't understood what was the cause of problem and which format is proper for registering
+reducers for Store Module, but with help of some guys from GitHub issues comments, I succeed and registered reducer.
+The difference in syntax between versions is one of the problems in NGRX learning, conceptions are the same, syntax is another.
+Today I gonna finish my challenge and write total report about what I have learned during thing period and why I failed last days
+of challenge and postponed it on future days
+
+Touched themes:
+Reducers, types, Design Components, strict mode, modeling state, Selectors
+
+Conclusion:
+
+1. Finished Chapter 7 of NGRX essentials
+2. You have to set deadlines for your daily tasks
+3. You have to pay attention on bottom listed conclusions, you don't follow them
+4. Need to work on better time management (work schedule and sleep routine)
+5. Have to improve speed of taking actions and decisions during building markup / layout
+6. Need to find an app to build multi layout window on Mac (find it finally)

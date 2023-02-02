@@ -1,0 +1,149 @@
+In a search for a right course
+
+It was really hard to find a right course, let's talk about 7 days bootcamp.
+The best what I learned:
+    - how to embed in your html some external widgets of Twitter, YouTube with <iframe> or loading <script>
+    - shorthand of background property (image, repeat, attachment, position)
+That's all
+
+Next course is Mixer clone
+From this course:
+    - practiced using pseudo classes
+
+Next course is Intermediate course, here we have created small movie app
+This was the first course, where I started doing some interesting stuff:
+    - practiced flex, pseudo classes
+    - implemented theme switching, simple image slider
+    - learned about font-awesome and correct fonts connecting
+    - started to write class names in pseudo "BEM" manner)
+    - implemented some fancy hover animations with transform
+
+Next course is Bakery project
+It was second advanced step in building layouts
+During that course:
+    - discovered concept of normalize
+    - integrate Google Map widjet
+    - worked with @import() in css
+
+Next course is Portfolio project
+There are were following things: 
+    - created first Figma design on my own
+    - started wright semantically correct "BEM" class names
+    - started to use SCSS instead of CSS
+    - started to use SCSS variables and nesting
+    - learned how to right set margin / padding for elements, conception of :last-child
+    - started to write adaptive with media queries from big to low width for all classes (iterative approach)
+
+After this course I decided to switch to another author and started course Advanced CSS and SASS
+It was very cool course where I have learned a lot of things, I'll try to list all of them below:
+    - loading multiple stylesheets in NTML with <link> tag
+    - parsing stages of CSS, Cascade, CSS object model, converting relative units to px
+    - Render Tree, Box Model, resolving conflicts, rem instead of px
+    - mixins, functions, extends, nesting, &:not(:last-child)
+    - 7 to 1 concept for structuring project with SCSS files
+    - utility classes, their need and usage, similar to Bootstrap classes
+    - typography classes, animation-name,duration, customization with "BEM" modifiers
+    - custom grid layout with floats
+    - calc(), passing scss variables in calc expression, atrribute starts with selector [class^="col-"]
+    - main scss file conception and partials, import by name without .scss extension
+    - @keyframes - 0% - 50% - 100%
+    - linear gradients
+    - outline, change some elements style while hover another element
+    - background-clip
+    - custom button, :link, :visited, :active
+    - two sides cards, backface-visibility, perspective, rotateY()
+    - clip-path: polygon
+    - align absolute element by center inside relative container
+    - changing inner classes styles, during :hover parrent element with power of inheritance
+    - box-decoration-break: clone, splitting span on multiple independent elements
+    - transform: skewX()
+    - shape-outside, clip-path: circle, floating text around images
+    - :focus, :focus:invalid, ::webkit-input-placeholder, :placeholder-shown, custom radio button with <label> without JS,
+    placeholder, required, name attributes
+    - transform: rotate(5deg), box-shadow, filter: blur() brightness()
+    - implementation custom burger menu, with animation of burger to cross, without JS, with :checked and <label for>
+    - "solid gradient" : linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%)
+    - responsive images through HTML (srcset, sizes), different images based on screen size
+    - figure, figcaption
+    - popup with CSS, :target, anchor links # , backdrop-filter, 
+    - column-count, column-gap, column-rule, hyphens => new CSS properties
+    - media query manager with mixins, @if, @supports, overriding total font-size for <body> in % to make 1 rem = 10px
+    - build, compress, concat, post, server, npm scripts
+
+Yes, there were done many things and impelemented, hamburger, popup, checkbox, radio button with custom CSS and its power
+
+Next course is about FlexBox from the same author
+Within that course also were done many cool things:
+    - covered conception of limiting container
+    - custom CSS variables, their combination with SCSS ones
+    - ~, > Selectors
+    - context menus on hover
+    - suggestions for input, when user start typing, pure CSS with :placeholder-shown
+    - animation multiple properties with delay (stepped animation), cubicbezier
+    - pulsate animation, infinite, :focus on button
+    - fill and SVGs
+    - mask-image, mask-size
+    - practicing BEM
+    - practicing All flex properties
+    - installed ngrok for testing created apps on mobile phones, first of all make them publicly available
+
+Final technology in CSS. GRID course
+I took it from another author for better understanding
+During that course I learned and practised:
+    - named grid-columns and rows
+    - repeat(), minmax(), auto-fit, auto-fill, min-content, max-content, fr
+    - grid-column, grid-row, "/" syntax, "span 3" syntax, "1 / -1" syntax
+    - grid element as another grid layout
+    - justify-items, justify-self, align-self
+    - dynamic padding based on view width => vw
+    - grid-auto-rows/columns, grid-gap, grid-column-gap, grid-row-gap 
+    - advanced GRID Dev Tools in Firefox browser
+
+Lest decribe the last HTML + CSS related project is Master Class from Frylancer By Life
+I have learned:
+    - how to fast analyze design and split it on HTML elements
+    - power of adaptiveValue property (need to describe it work in details)
+    - advanced responsive conceptions
+    - practiced better BEM namings, nested bem blocks concept
+    - worked with advanced project setup based on gulp with many ready to use components
+
+And last but not least.
+Angular + TypeScript + JavaScript + Angular related staff + Interview
+What I have done:
+    - Covered Dependency Injection and its implementation in Angular
+    - Injector Types, how Angular resolve dependencies, Resolution Modifiers
+    - Change Detection, how works , different strategies, async pipe, Dumb vs Smart components
+    - Directives, types, @HostListener, @HostBinding, ElementRef, TemplateRef, ViewContainerRef, custom directive, work under
+    the hood, <ng-template>, <ng-container>
+    - Lifecycles Hooks, content-projection
+    - Types of compilation, AOT vs JIT
+    - Standalone components
+    - Forms, types, way to validation
+    - Hot vs Cold observables, Flattening operators, creation functions, clean up logic, declarative approach, creation custom 
+    observables, ways to unsubscribe
+    - Generics, Ambient Declarations, Mapped Types, type vs interfaces, unknown vs any
+    - types coercieon, shallow vs deep copy, basic concepts of JS
+    - NGRX concepts, when to use, benefits, old vs new syntax, Flux approach
+    - ...more what I cannot remember
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Final Conclusion
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+I have done a lot within it monthly challenge, I got confidence in building layouts with CSS, I learned, repeated a lot of 
+theory and build more grasp knowledge in my head about different topics from Angular, RXJS, HTML, CSS, SCSS, TypeScript.
+
+I was very cool experience, by the end of challenge I started running out of time, because of some events in my personal life,
+but I am finishing that challenge in 03.02.2023 and I'm happy with results, I know that I can show better results, but we have 
+what we have. I hope that those skills and knowledge will help in my search of a new job. 
+It is obvious that I should have started such learning and practice most of things earlier and my learning curve was wrong.
+First what you have to do it grasp base of each technology and only after that you can move to some advanced concepts or tell
+someone that you know it technology and what worse call yourself as an expert. 
+
+I think I will continue that challenge, but in a bit other way, actually I don't know in which way). My main goal was to get 
+practical skills and theory knowledge in order to find a new job, today I got refusal from one company.
+I will try to text all recruiters who were written to me and we will see result of it.
+
+I will finish my speech with those words:
+
+Success consists of going from failure to failure without loss of enthusiasm. (Winston Churchill) 

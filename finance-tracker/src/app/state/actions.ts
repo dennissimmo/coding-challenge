@@ -1,5 +1,5 @@
 import {createAction, props} from "@ngrx/store";
-import {Category} from "./state";
+import {Category} from "./models";
 
 export const addCategory = createAction(
   "[Category List] Add category",

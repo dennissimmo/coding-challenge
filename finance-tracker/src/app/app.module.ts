@@ -6,16 +6,23 @@ import { AppComponent } from './app.component';
 
 import { StoreModule } from "@ngrx/store";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CategoryListContainerComponent } from './category-list-container/category-list-container.component';
+import { CategoryListPresenterComponent } from './category-list-presenter/category-list-presenter.component';
+import {MatListModule} from "@angular/material/list";
+import { reducers} from "./state/reducer";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoryListContainerComponent,
+    CategoryListPresenterComponent
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot(reducers),
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

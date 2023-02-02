@@ -1,11 +1,23 @@
-export interface Category {
-  name: string
+import {Category} from "./models";
+
+export interface CategoryState {
+  list: Category[];
 }
 
 export interface AppState {
-  categories: Category[];
+  categories: CategoryState
 }
 
-export const initialState: AppState = {
-    categories: []
+export const initialState: CategoryState = {
+    list: [
+      {
+        name: 'Food'
+      },
+      {
+        name: 'Sport'
+      },
+      {
+        name: 'Coffee'
+      },
+    ]
 };

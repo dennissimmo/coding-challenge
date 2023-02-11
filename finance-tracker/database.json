@@ -1,8 +1,28 @@
 {
   "categories": [
     {
-      "name": "Junior",
+      "name": "IT",
       "id": 2
+    },
+    {
+      "name": "Books",
+      "id": 4
+    },
+    {
+      "name": "Coffee",
+      "id": 5
+    },
+    {
+      "name": "Home",
+      "id": 6
+    },
+    {
+      "name": "Birthday",
+      "id": 8
+    },
+    {
+      "name": "Final",
+      "id": 9
     }
   ],
   "expenses": []

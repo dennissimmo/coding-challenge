@@ -18,6 +18,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {EffectsModule} from "@ngrx/effects";
 import {CategoriesEffects} from "./state/effects";
 import {HttpClientModule} from "@angular/common/http";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {HttpClientModule} from "@angular/common/http";
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

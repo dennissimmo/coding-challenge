@@ -22,7 +22,7 @@ const _categoryReducer = createReducer(
   })),
   on(actions.loadCategoriesSuccess, (state, action) => ({
     ...state,
-    list: action.payload,
+    list: action.payload.categories,
   }))
 );
 

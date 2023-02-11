@@ -4,6 +4,11 @@ import {CategoryListContainerComponent} from "./category-list-container/category
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'categories'
+  },
+  {
     path: 'categories', component: CategoryListContainerComponent
   }
 ];

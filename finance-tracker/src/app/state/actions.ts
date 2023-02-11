@@ -7,11 +7,13 @@ export const addCategory = createAction(
 );
 
 export const categoryAddedSuccess = createAction(
-  "[CategoryList] Add Category Success"
+  "[CategoryList] Add Category Success",
+  props<{ payload: { data:Category; message?:string } }>()
 );
 
 export const categoryAddedError = createAction(
-  "[CategoryList] Add Category Error"
+  "[CategoryList] Add Category Error",
+  props<{ payload: { message?:string } }>()
 );
 
 export const editCategory = createAction(
@@ -25,11 +27,13 @@ export const deleteCategory = createAction(
 );
 
 export const categoryDeletedSuccess = createAction(
-  "[CategoryList] Delete Category Success"
+  "[CategoryList] Delete Category Success",
+  props<{ payload: { message?:string } }>()
 );
 
 export const categoryDeletedError = createAction(
-  "[CategoryList] Delete Category Error"
+  "[CategoryList] Delete Category Error",
+  props<{ payload: { message?:string } }>()
 );
 
 export const deleteAllCategories = createAction(
@@ -37,14 +41,15 @@ export const deleteAllCategories = createAction(
 );
 
 export const categoriesListLoaded = createAction(
-  "[CategoryList] Categories List Loaded"
+  "[CategoryList] Categories List Loaded",
 );
 
 export const loadCategoriesSuccess = createAction(
   "[CategoryList] Load Categories Success",
-  props<{ payload: Category[] }>()
+  props<{ payload: { categories: Category[], message?: string } }>()
 );
 
 export const loadCategoriesError = createAction(
-  "[CategoryList] Load Categories Error"
+  "[CategoryList] Load Categories Error",
+  props<{ payload: { message?:string } }>()
 );

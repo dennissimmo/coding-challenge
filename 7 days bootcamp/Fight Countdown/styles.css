@@ -6,7 +6,7 @@ html {
 body {
     font-family: Paladins;
     height: 100vh;
-    background: url("https://assets.codepen.io/6060109/versus-bg.png") no-repeat center;
+    background: url("https://assets.codepen.io/6060109/versus-bg.png") no-repeat  center;
     background-size: cover;
     display: flex;
     align-items: space-between;

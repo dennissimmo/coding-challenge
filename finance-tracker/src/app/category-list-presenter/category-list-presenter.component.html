@@ -1,5 +1,13 @@
 <mat-list>
   <mat-list-item *ngFor="let category of categories">
-    {{ category.name }}
+    <div class="category">
+      <span class="category__title" matListItemText>{{ category.name }}</span>
+      <mat-icon class="delete-icon" (click)="deleteCategory(category)">close</mat-icon>
+    </div>
   </mat-list-item>
 </mat-list>
+<mat-form-field>
+  <mat-label>New Category Name:</mat-label>
+  <input type="text" matInput [(ngModel)]="categoryName">
+  <button mat-flat-button (click)="addCategory()">Add category</button>
+</mat-form-field>

@@ -1,20 +1,28 @@
 import {AppState, initialState} from "./state";
 import * as actions from "./actions";
 import { ActionReducerMap, createReducer, on} from "@ngrx/store";
+import {categoriesListLoaded} from "./actions";
 
 const _categoryReducer = createReducer(
   initialState,
-  on(actions.addCategory, (state, { category }) => ({
+  on(actions.addCategory, (state, { category }) => {
+    console.log('add category action triggered');
+    return {
+      ...state,
+      list: [...state.list, category],
+    }
+  }),
+  on(actions.deleteCategory, (state, { id }) => ({
     ...state,
-    categories: [...state.list, category],
-  })),
-  on(actions.deleteCategory, (state, { name }) => ({
-    ...state,
-    categories: state.list.filter(category => category.name !== name)
+    list: state.list.filter(category => category.id !== id)
   })),
   on(actions.deleteAllCategories, (state) => ({
     ...state,
-    categories: []
+    list: []
+  })),
+  on(actions.loadCategoriesSuccess, (state, action) => ({
+    ...state,
+    list: action.payload,
   }))
 );
 

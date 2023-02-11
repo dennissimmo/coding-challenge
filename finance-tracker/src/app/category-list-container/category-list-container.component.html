@@ -1,3 +1,5 @@
 <app-category-list-presenter
   [categories]="categories$ | async"
+  (categoryAdded)="onCategoryAdded($event)"
+  (categoryRemoved)="onCategoryRemoved($event)"
 ></app-category-list-presenter>

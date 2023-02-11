@@ -10,6 +10,14 @@ import { CategoryListContainerComponent } from './category-list-container/catego
 import { CategoryListPresenterComponent } from './category-list-presenter/category-list-presenter.component';
 import {MatListModule} from "@angular/material/list";
 import { reducers} from "./state/reducer";
+import {MatButtonModule} from "@angular/material/button";
+import {FormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from "@angular/material/icon";
+import {EffectsModule} from "@ngrx/effects";
+import {CategoriesEffects} from "./state/effects";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,9 +28,16 @@ import { reducers} from "./state/reducer";
   imports: [
     BrowserModule,
     StoreModule.forRoot(reducers),
+    EffectsModule.forRoot([CategoriesEffects]),
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

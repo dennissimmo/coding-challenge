@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, EventEmitter, Input, Output} from '@angular/core';
 import {Category} from "../state/models";
 
 @Component({
@@ -9,6 +9,18 @@ import {Category} from "../state/models";
 })
 export class CategoryListPresenterComponent {
 
-  @Input() categories: Category[] | null = [];
+  categoryName!: string;
 
+  @Input() categories: Category[] | null = [];
+  @Output() categoryAdded = new EventEmitter<Category>();
+  @Output() categoryRemoved = new EventEmitter<Category>();
+
+  addCategory() {
+    this.categoryAdded.emit({ name: this.categoryName });
+    this.categoryName = '';
+  }
+
+  deleteCategory(category: Category) {
+    this.categoryRemoved.emit(category);
+  }
 }

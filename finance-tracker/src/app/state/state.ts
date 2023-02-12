@@ -1,11 +1,13 @@
 import {Category} from "./models";
+import {LogState} from "../logs/state/state";
 
 export interface CategoryState {
   list: Category[];
 }
 
 export interface AppState {
-  categories: CategoryState
+  categories: CategoryState;
+  logs: LogState
 }
 
 export const initialState: CategoryState = {

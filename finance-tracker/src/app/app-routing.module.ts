@@ -10,6 +10,10 @@ const routes: Routes = [
   },
   {
     path: 'categories', component: CategoryListContainerComponent
+  },
+  {
+    path: 'logs',
+    loadChildren: () => import('./logs/logs.module').then(m => m.LogsModule)
   }
 ];
 

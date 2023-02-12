@@ -25,5 +25,13 @@
       "id": 9
     }
   ],
-  "expenses": []
+  "logs": [
+    {
+      "title": "Middle Cappuccino",
+      "date": "2023-02-12",
+      "amount": 1,
+      "type": "Spend",
+      "categoryId": "5"
+    }
+  ]
 }

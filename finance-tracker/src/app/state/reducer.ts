@@ -1,7 +1,7 @@
 import {AppState, initialState} from "./state";
 import * as actions from "./actions";
-import { ActionReducerMap, createReducer, on} from "@ngrx/store";
-import {categoriesListLoaded} from "./actions";
+import {ActionReducerMap, createReducer, on} from "@ngrx/store";
+import {logsReducer} from "../logs/state/reducer";
 
 const _categoryReducer = createReducer(
   initialState,
@@ -31,6 +31,7 @@ const _categoryReducer = createReducer(
 // }
 
 export const reducers: ActionReducerMap<AppState> = {
-  categories: _categoryReducer
+  categories: _categoryReducer,
+  logs: logsReducer
 }
 

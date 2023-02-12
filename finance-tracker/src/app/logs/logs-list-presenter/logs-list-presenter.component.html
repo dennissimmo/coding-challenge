@@ -1,0 +1,5 @@
+<mat-list *ngFor="let log of logs">
+  <mat-list-item>
+    {{ log.title + ' ' }} {{ log.date | date }}
+  </mat-list-item>
+</mat-list>

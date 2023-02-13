@@ -1,0 +1,11 @@
+Today I started second monthly challenge and first topic I decide Template Driven Development in Angular, I liked it in Java,
+so I wanna try it in Angular as well. The process is simple, you write test, then make it successfully run, and after it you do refactoring code.
+I setup a project, there were problems with instalation and setup of UIkit (I haven't worked with it before) and propert configuration of buiild options
+in order to serve project, build and then run tests. But I successfully managed it and ran my first tests for Components in Angular.
+I have finished with some problem inside tests for header bottom part, it will be start point for tomorrow
+
+
+Conclusion
+1. Started new challenge
+2. Ran first Component tests
+3. Managed to fix problems with tests

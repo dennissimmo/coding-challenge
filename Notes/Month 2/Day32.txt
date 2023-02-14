@@ -1,0 +1,8 @@
+Today I have written tests for Homes Component and HomesService, loaded data from a JSON file and passed it further to template and rendered it.
+Also I have compared how we write tests and which types of test we have written for my job project, and I found that we didn't write tests for Components,
+only for Services, methods and pipes. Author of that course is using outdated syntax for some things, which can be implemented with power of DI in Angular
+
+Conclusion
+1. Continued challenge
+2. Wrote and ran first Service tests
+3. Compared how we write tests on my job project

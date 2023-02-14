@@ -1,1 +1,6 @@
-<p>homes works!</p>
+<div class="list">
+  <div data-test="home" *ngFor="let home of homes$ | async ">
+    <span class="uk-margin-right" data-test="title">{{ home.title }}</span>
+    <span data-test="location">{{ home.location }}</span>
+  </div>
+</div>

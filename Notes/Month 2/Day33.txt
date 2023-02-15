@@ -1,0 +1,10 @@
+Today I have spent about 50 minutes directly on course, implemented test for opening Modal, created component for Modal and realized
+that I had wrong expectations about that course, it has many outdated syntax and you must to investigate what caused your problem and how to fix it for specific
+version of library. I want to stop doing that course, I burned out of it, maybe it is because I'm tired and cannnot manage instalation some apps on Kali Linux, which I needed
+for completing laboratory work from Ecommerce. I have installed Parallels then Kali Linux, then for 40 minutes had been trying install that application, but sucked and decided 
+to install Windows, we will see how it will going.
+
+Conclusion
+1. Continued challenge (only 45 minutes today)
+2. Decided to stop Angular TDD course
+3. Sucked with time management, even though woke up at 8 oclock

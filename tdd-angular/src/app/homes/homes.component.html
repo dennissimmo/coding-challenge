@@ -2,5 +2,8 @@
   <div data-test="home" *ngFor="let home of homes$ | async ">
     <span class="uk-margin-right" data-test="title">{{ home.title }}</span>
     <span data-test="location">{{ home.location }}</span>
+    <div data-test="book-btn">
+      <button (click)="onBook($event)">Book</button>
+    </div>
   </div>
 </div>

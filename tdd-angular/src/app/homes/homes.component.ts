@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable, of} from "rxjs";
 import {HomesService} from "./homes.service";
+import {DialogService} from "../services/dialog.service";
+import {BookComponent} from "../components/book/book.component";
 
 export interface Home {
   title: string;
@@ -10,14 +12,18 @@ export interface Home {
 @Component({
   selector: 'app-homes',
   templateUrl: './homes.component.html',
-  styleUrls: ['./homes.component.scss']
+  styleUrls: ['./homes.component.scss'],
+  providers: [
+    DialogService
+  ]
 })
 export class HomesComponent implements OnInit {
 
   homes$!: Observable<Home[]>;
 
   constructor(
-    private homesService: HomesService
+    private homesService: HomesService,
+    private dialogService: DialogService
   ) {
   }
 
@@ -37,5 +43,15 @@ export class HomesComponent implements OnInit {
         location: 'China'
       } as Home
     ]);*/
+  }
+
+  onBook($event: MouseEvent) {
+    this.dialogService.open(
+      BookComponent,
+      {
+        width: '250px',
+        data: {}
+      }
+    );
   }
 }

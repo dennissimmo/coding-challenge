@@ -1,11 +1,11 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { HomesService } from './homes.service';
+import {HomesService} from './homes.service';
 import {of} from "rxjs";
 import {Home} from "./homes.component";
 import {HttpClient} from "@angular/common/http";
 import {HttpClientTestingModule} from "@angular/common/http/testing";
-
+import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 
 
 describe('HomesService', () => {
@@ -14,7 +14,11 @@ describe('HomesService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule]
+      imports: [HttpClientTestingModule],
+      providers: [
+        { provide: MatDialogRef, useValue: {} },
+        { provide: MatDialog, useValue: {} }
+      ]
     });
     service = TestBed.inject(HomesService);
     httpClient = TestBed.inject(HttpClient);

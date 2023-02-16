@@ -1,0 +1,8 @@
+Today I have started Angular Architecture course, by the end of which I will implement FullStack application with Firebase as Server part,
+improve my Architector skills in Angular, improve knowledge of Angular Material, Firebase and NGRX. Today I setup a project, installed dependencies,
+and configured Firebase app. 
+
+Conclusion
+1. Started new course about building extendable Angular Architecture
+2. Initializated project, installed dependencies, fixed problems with typings
+3. Made one more step to improving myself as an Angular developer

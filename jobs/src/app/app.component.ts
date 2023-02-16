@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { environment } from '@env/environment';
+import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jobs';
+  isVisible = environment.isTesting;
+
+  constructor(
+      private afs: AngularFirestore
+  ) {
+      this.afs.collection('test').snapshotChanges().subscribe(
+          data => console.log(data)
+      );
+  }
 }

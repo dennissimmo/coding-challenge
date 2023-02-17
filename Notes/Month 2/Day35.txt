@@ -1,0 +1,7 @@
+Today I have spent 2 hours on Angular Architecture course. Were created: structure of styles, different files, folders, whole architecture for project, splitting on modules, folders, index.ts files,
+lazy loading, routing, shared styles.
+
+Conclusion: 
+1. Created architecture for an entire app (good start)
+2. Learned rules, how to identify, when we have to create a separate module for component, how to split components into subscomponents, how to group elements from UI by components
+3. Continued course

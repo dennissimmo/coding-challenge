@@ -15,7 +15,7 @@ export class AppComponent {
       private afs: AngularFirestore
   ) {
       this.afs.collection('test').snapshotChanges().subscribe(
-          data => console.log(data)
+          data => console.log(data.map(x => x.payload.doc.data()))
       );
   }
 }

@@ -1,0 +1,8 @@
+Today I have spent more 2 hours on learning Angular architecture, I have implemented reusable input element with emplementing Control Value Accessor for behaving custom input as 
+Angular Form Control and also created a form field with <ng-content> and set of input paramethers. I have read an article about ControlValueAccessor and I think understood how it works
+and why we need it. I can do more today, but I decided to finish watching of 4th Peaky Blinders season.
+
+Conclusion
+1. Learned how works ControlValueAccessor, why we need it and implemented custom input with it.
+2. Understood that I can do things well, when I really want and I just should believe in myself and keep going
+3. Do not be afraid of some things, because of thoughts, that you did not deserve something, or not ready yet for something

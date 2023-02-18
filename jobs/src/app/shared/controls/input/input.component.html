@@ -1,0 +1,7 @@
+<input #inputRef type="text" class="app-input"
+       [value]="value"
+       [placeholder]="placeholder || ''"
+       [attr.disabled]="isDisabled ? true : null"
+       (keyup)="onKeyUp(inputRef.value)"
+       (blur)="onBlur()"
+>

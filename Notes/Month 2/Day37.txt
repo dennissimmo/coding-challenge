@@ -1,0 +1,7 @@
+To I have created password input, taken for example regular input component and started for creating Frontend models for 
+custom select component. Not much work was done today, it was a holiday and I decided to take more rest.
+
+Conclusion
+1. Implemented new form Control
+2. Started type Frontend models
+3. Improved my mental health and partly fullfill need in social communication

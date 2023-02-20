@@ -1,0 +1,7 @@
+I have implemented select, checkboxes and radios component, select is configurable and strongly typed, for the rest most problem with appropriate setting of values.
+I'm very tired, so I badly accept information and feel that I don't have strong focus, I should take course lessons in the morning
+
+Conclusion:
+
+1. Implemented more controls
+2. Continued course

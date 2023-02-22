@@ -1,0 +1,7 @@
+Today I learned how on practice go through last steps of bloom's taxonomy. You have to documenting what you have learn, what exact elements of it do, experiment with 
+different values in diffirent situations, analyze how it can behave if tommorow remove some specific block from the page, or content there will be more content.
+Create CodePens or do it in your owns projects and repository, make notes, comments, so you come later and figure out how you did something and how it works.
+Today was theory without practice
+
+Conclusion: 
+1. Got an example how on practice go through last levels of BLOOM'S Taxonomy

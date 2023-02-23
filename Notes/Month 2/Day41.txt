@@ -1,0 +1,11 @@
+Today I learned how it is important to try to teach other people, try to explain something to them with usage of different approaches articles, videos, forums.
+Consider Dev.to as a starting point to writing articles on some topics and answer to questions in different Angular communities, you have enough experience
+to help others fix theirs problems in Angular in effective way and offer multiple approaches with different concepts of Angular and even solving problems
+in different ways with imperative or declarative programming. Do not try to make things perfect, leave 10% on some mistakes, because if you will try 
+make everything perfect you never start it at all. Write a list what you want to learn, track a progress, repeat it periodically, discuss, view on it from 
+different perspective, experiment and it will help you.
+
+Conclusion: 
+1. Finished learning section from the CSS Demystified course
+2. Learned how to learn new things better, which stages we are going through when learn something new and how do not get stucked at some stages
+3. Practiced my listening, by carefully watching author's videos

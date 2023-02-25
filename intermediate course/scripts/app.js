@@ -1,3 +1,65 @@
+const users = [
+    {
+        id: 0,
+        name: 'Denys'
+    },
+    {
+        id: 1,
+        name: 'Lisa'
+    },
+    {
+        id: 2,
+        name: 'John'
+    },
+];
+
+// Fetch ids of users
+function fetchIds(users) {
+    return users.map(function (user) {
+        return user.id;
+    })
+};
+
+// Fetch ids of users
+const userIds = test => test.map(user => user.id);
+
+console.log(fetchIds(users));
+console.log(userIds(users));
+
+// Destructuring should be only with parenthesis
+const fetchId = ({ id }) => id;
+const idsWithInner = somethingWithId => somethingWithId.map(fetchId);
+console.log(idsWithInner(users));
+
+// wrong function with two parameters and initial value
+
+const shape = {
+    x: 20,
+    y: 40,
+    getThis: () => this,
+    o: {
+        x: 50,
+        getShape: () => this
+    }
+};
+
+console.log(this);
+
+console.log(shape.o.getShape());
+console.log(shape.getThis());
+
+// const userIdsWithParam = testUsers, param = 5 => {
+//     return testUsers.map(user => user.name);
+// };
+
+
+// Syntax error: Missing initializer in const declaration, without paranthesis around parameters list
+// Syntax error: Malformed arrow function parameter
+// console.log(userIdsWithParam(users, 'hello'));
+
+
+
+
 function initSlider() {
     const arrows = document.querySelectorAll(".arrow");
     const movieLists = document.querySelectorAll(".movie-list");

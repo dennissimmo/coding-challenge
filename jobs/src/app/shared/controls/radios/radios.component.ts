@@ -1,13 +1,18 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {ControlValueAccessor} from "@angular/forms";
+import {ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
 import {ControlItem, Value} from "@app/models/frontend";
 
 @Component({
   selector: 'app-radios',
   templateUrl: './radios.component.html',
-  styleUrls: ['./radios.component.scss']
+  styleUrls: ['./radios.component.scss'],
+    providers: [{
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: RadiosComponent,
+        multi: true
+    }]
 })
-export class RadiosComponent implements OnInit, ControlValueAccessor{
+export class RadiosComponent implements OnInit, ControlValueAccessor {
 
     @Input() items: ControlItem[];
     @Output() changed = new EventEmitter<Value>();

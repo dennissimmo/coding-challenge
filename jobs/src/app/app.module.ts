@@ -13,6 +13,19 @@ import {AngularFireStorageModule} from "@angular/fire/compat/storage";
 import {environment} from "@env/environment";
 import {provideMockStore} from '@ngrx/store/testing';
 import {HeaderComponent} from './components/header/header.component';
+import {MAT_DATE_FORMATS, MAT_DATE_LOCALE, MatDateFormats, MatNativeDateModule} from "@angular/material/core";
+
+const APP_DATE_FORMATS: MatDateFormats = {
+    parse: {
+        dateInput: { day: 'numeric', month: 'numeric', year: 'numeric' },
+    },
+    display: {
+        dateInput: { day: 'numeric', month: 'short', year: 'numeric' },
+        monthYearLabel: { year: 'numeric', month: 'short' },
+        dateA11yLabel: { year: 'numeric', month: 'long', day: 'numeric' },
+        monthYearA11yLabel: { year: 'numeric', month: 'long' }
+    }
+};
 
 
 @NgModule({
@@ -28,9 +41,13 @@ import {HeaderComponent} from './components/header/header.component';
         AngularFirestoreModule,
         AngularFireStorageModule,
         AngularFireModule.initializeApp(environment.firebaseConfig.config),
-        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()})
+        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
+        MatNativeDateModule
     ],
-    providers: [],
+    providers: [
+        { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
+        { provide: MAT_DATE_FORMATS, useValue: APP_DATE_FORMATS }
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

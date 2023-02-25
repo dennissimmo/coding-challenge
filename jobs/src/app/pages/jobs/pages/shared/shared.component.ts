@@ -55,12 +55,22 @@ export class SharedComponent implements OnInit {
                     Validators.required
                 ]
             }],
-            checkboxes: [null, {
+        checkboxes: [null, {
                 updateOn: 'change', validators: [
                     Validators.required
                 ]
             }],
             radios: [null, {
+                updateOn: 'change', validators: [
+                    Validators.required
+                ]
+            }],
+            date: [null, {
+                updateOn: 'change', validators: [
+                    Validators.required
+                ]
+            }],
+            dateRange: [null, {
                 updateOn: 'change', validators: [
                     Validators.required
                 ]
@@ -78,5 +88,7 @@ export class SharedComponent implements OnInit {
 
     onToggleInline() {
         this.isInline = !this.isInline;
+        console.log(this.form);
+
     }
 }

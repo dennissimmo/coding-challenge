@@ -1,0 +1,7 @@
+Today I have only worked for 1 hour so have not done much, only created models for backend, added snackbar notifications and created Firebase Collections.
+Furthers steps will be projecting NGRX store and implementing real functionality
+
+Conclusion:
+
+1. Added notifications service
+2. Created models and collections

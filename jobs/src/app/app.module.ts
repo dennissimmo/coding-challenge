@@ -12,6 +12,7 @@ import {AngularFireStorageModule} from "@angular/fire/compat/storage";
 import {environment} from "@env/environment";
 import {HeaderComponent} from './components/header/header.component';
 import {MAT_DATE_FORMATS, MAT_DATE_LOCALE, MatDateFormats, MatNativeDateModule} from "@angular/material/core";
+import {NotificationModule} from "@app/services";
 
 const APP_DATE_FORMATS: MatDateFormats = {
     parse: {
@@ -40,7 +41,8 @@ const APP_DATE_FORMATS: MatDateFormats = {
         AngularFireStorageModule,
         AngularFireModule.initializeApp(environment.firebaseConfig.config),
         StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
-        MatNativeDateModule
+        MatNativeDateModule,
+        NotificationModule.forRoot()
     ],
     providers: [
         { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {regex, regexErrors} from "@app/shared";
+import {markFormGroupTouched, regex, regexErrors} from "@app/shared";
 import {ControlItem} from "@app/models/frontend";
 
 @Component({
@@ -14,6 +14,8 @@ export class SharedComponent implements OnInit {
     isInline: boolean;
     regexErrors = regexErrors;
     items: ControlItem[];
+    disabled: boolean;
+    showSpinner: boolean;
 
     constructor(
         private formBuilder: FormBuilder
@@ -38,7 +40,7 @@ export class SharedComponent implements OnInit {
     ngOnInit(): void {
         this.form = this.formBuilder.group({
             input: [null, {
-                updateOn : 'blur',
+                updateOn: 'blur',
                 validators: [
                     Validators.required,
                     Validators.minLength(3),
@@ -55,7 +57,12 @@ export class SharedComponent implements OnInit {
                     Validators.required
                 ]
             }],
-        checkboxes: [null, {
+            autocomplete: [null, {
+                updateOn: 'change', validators: [
+                    Validators.required
+                ]
+            }],
+            checkboxes: [null, {
                 updateOn: 'change', validators: [
                     Validators.required
                 ]
@@ -79,16 +86,53 @@ export class SharedComponent implements OnInit {
     }
 
     onPatchValue(): void {
-        this.form.patchValue({ input: 'test'});
+        this.form.patchValue({
+            input: '123',
+            password: 'qwerty',
+            autocomplete: 1,
+            select: 2,
+            checkboxes: [1],
+            radios: 2,
+            date: new Date().getTime(),
+            dateRange: {
+                from: new Date(1, 2, 2022),
+                to: new Date(2, 4, 2022)
+            }
+        });
     }
 
     onSubmit() {
+        // If the control is untouched, form-field will not add error modifier
         console.log('Submit');
+        if (!this.form.valid) {
+            markFormGroupTouched(this.form);
+        }
     }
 
     onToggleInline() {
         this.isInline = !this.isInline;
         console.log(this.form);
+
+    }
+
+    onToggleDisable() {
+        this.disabled = !this.disabled;
+        if (this.disabled) {
+            this.form.disable();
+        } else {
+            this.form.enable();
+        }
+    }
+
+    onToggleSpinner() {
+        this.showSpinner = !this.showSpinner;
+    }
+
+    onError() {
+
+    }
+
+    onSuccess() {
 
     }
 }

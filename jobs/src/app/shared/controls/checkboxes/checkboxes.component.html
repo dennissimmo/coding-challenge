@@ -1,6 +1,6 @@
 <div class="checkboxes">
     <div *ngFor="let item of items">
-        <label class="checkbox">
+        <label class="checkbox" [class.checkbox_disabled]="isDisabled">
             <input #check type="checkbox" class="checkbox__input" [value]="item.value"
                    [checked]="isChecked(item.value)"
                    [attr.disabled]="isDisabled ? true : null"

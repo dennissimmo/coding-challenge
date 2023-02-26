@@ -1,0 +1,10 @@
+Today I have added autocomplete component, spinner component, some buttons for managing disable state of controls, utility method for marking FormGroup controls as touched with recursion.
+In autocomplete is using Highlight Pipe, that higlight matches of text in autocomplete options from its input, by wrapping text in <b> </b> tag. 
+Also today I first haved used ChatGPT in my learning, it is very powerful, helpfull tool for people, if you know how to correctly form requests and what you directly need it will 
+heavily improve your productivity. The main thing that is not always use it, because you can basically forget how to think about problem solving on your own, it can useful if you want to 
+compare your solution of some problem with ChatGPT's one.
+
+Conclusion
+1. Implemented autocomplete, spinner component
+2. Added more control buttons
+3. Started using ChatGPT in learning things

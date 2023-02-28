@@ -1,0 +1,7 @@
+Today I have started building NGRX store for its app, created actions, models, reducer for dictionaries and READ effect for Dictionaries with handling success and error loading.
+Reminded advantages of using NGRX store over Subject/Services approach, compared old syntax of writing reducers, actions, effects with new one in NGRX 8+
+
+Conclusion:
+
+1. Started creation of NGRX store for app
+2. Refreshed knowledge about NGRX and its usage

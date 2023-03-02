@@ -1,0 +1,10 @@
+Today I have created signIn, signUp, logOut effects, after that added email-verification with redirection to email-confirm component.
+Created email-confirm, registration, login modules / component, setup routes for auth module.
+Implemented Registration component , formGroup with controls, repeatPasswordValidator, updateOnBlur, submit with dispatching Action and selector getLoading
+for displaying loadingSpinner during request.
+
+Conclusion:
+1. Learned how to pass custom validators to formGroup
+2. Refreshed knowledge about Registration process with usage Firebase Authorization
+3. Practiced writing NGRX elements (selectors, effects)
+4. Configured lazy loading for an Auth module

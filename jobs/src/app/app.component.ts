@@ -1,21 +1,25 @@
-import { Component } from '@angular/core';
-import { environment } from '@env/environment';
-import {AngularFirestore} from "@angular/fire/compat/firestore";
+import {Component, OnInit} from '@angular/core';
+import {environment} from '@env/environment';
+import * as fromRoot from './store';
+import {readDictionary} from './store/dictionaries';
+import {Store} from "@ngrx/store";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'jobs';
   isVisible = environment.isTesting;
 
   constructor(
-      private afs: AngularFirestore
+      private store: Store<fromRoot.State>
   ) {
-      this.afs.collection('test').snapshotChanges().subscribe(
-          data => console.log(data.map(x => x.payload.doc.data()))
-      );
+
+  }
+
+  ngOnInit() {
+      this.store.dispatch(readDictionary());
   }
 }

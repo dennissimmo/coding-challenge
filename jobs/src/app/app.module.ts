@@ -13,6 +13,10 @@ import {environment} from "@env/environment";
 import {HeaderComponent} from './components/header/header.component';
 import {MAT_DATE_FORMATS, MAT_DATE_LOCALE, MatDateFormats, MatNativeDateModule} from "@angular/material/core";
 import {NotificationModule} from "@app/services";
+import {EffectsModule} from "@ngrx/effects";
+import {StoreModule} from "@ngrx/store";
+import {effects, reducers} from "@app/store";
+import {HttpClientModule} from "@angular/common/http";
 
 const APP_DATE_FORMATS: MatDateFormats = {
     parse: {
@@ -26,6 +30,7 @@ const APP_DATE_FORMATS: MatDateFormats = {
     }
 };
 
+const StoreDevTools = !environment.production ? StoreDevtoolsModule.instrument({ maxAge: 50 }) : [];
 
 @NgModule({
     declarations: [
@@ -34,13 +39,24 @@ const APP_DATE_FORMATS: MatDateFormats = {
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         AngularFireAuthModule,
         AngularFirestoreModule,
         AngularFireStorageModule,
         AngularFireModule.initializeApp(environment.firebaseConfig.config),
-        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !isDevMode()}),
+        StoreModule.forRoot(
+            reducers,
+            {
+                runtimeChecks: {
+                    strictActionImmutability: true,
+                    strictStateImmutability: true
+                }
+            }
+        ),
+        EffectsModule.forRoot(effects),
+        StoreDevtoolsModule.instrument({maxAge: 25, logOnly: !environment.production}),
         MatNativeDateModule,
         NotificationModule.forRoot()
     ],

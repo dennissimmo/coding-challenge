@@ -1,5 +1,6 @@
 import { Employee, Recruiter } from './roles';
-import {firestore} from "firebase/app";
+import firebase from "firebase/compat";
+import firestore = firebase.firestore;
 
 export * from './roles';
 

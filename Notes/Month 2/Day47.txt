@@ -1,0 +1,7 @@
+Today I have created selectors for Dicitonaries entity, then loaded countries flags from JSON file, after that registered first reducer, effects and setup DevTools.
+Found important detail, that we should listed DevToolsModule after all other NGRX tools in imports array, because logging won't work at all.
+After that I have created State, actions, reducer for User entity. SignIn, Up, Out actions, fixed some problems with types in usage old versions of Firebase.
+
+Conclusion: 
+1. Updated skills in problem solving
+2. Practiced creating main NGRX components

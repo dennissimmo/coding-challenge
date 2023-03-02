@@ -1,4 +1,5 @@
-import { firestore } from 'firebase/app';
+import firebase from "firebase/compat";
+import firestore = firebase.firestore;
 
 export interface Job {
     title: string;

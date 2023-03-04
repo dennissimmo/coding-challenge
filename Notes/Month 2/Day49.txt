@@ -1,0 +1,8 @@
+Today's day was not very productive as it was separated between two parts of day and it's outdated as well.
+Within 1 hour and 20 minutes I finished login, welcome, not-found components, added links in header and their proper displaying. Added init action, effect that will 
+automatically query active user if user is still authorized and section with Firebase is active, it is just a helper, it can be done via authState object.
+
+Conclusion:
+1. Added static pages and updated routing
+2. Better understood how to work with effects and actions
+3. Understood that spliting a lesson is a bad idea

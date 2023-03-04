@@ -25,6 +25,29 @@ export class UserEffects {
 
     }
 
+    init = createEffect(() =>
+        this.actions$.pipe(
+            ofType(fromActions.init),
+            switchMap(() => this.afAuth.authState.pipe(take(1))),
+            switchMap(authState => {
+                if (authState) {
+                    return this.afs.doc<User>(`users/${authState.uid}`).valueChanges().pipe(
+                        take(1),
+                        map(user => fromActions.initAuthorized({
+                            payload: {
+                                uid: authState.uid,
+                                user: user || null
+                            }
+                        })),
+                        catchError(err => of(fromActions.initError({ payload: { error: err.message } })))
+                    );
+                } else {
+                    return of(fromActions.initUnAuthorized());
+                }
+            })
+        )
+    )
+
     signInEmail = createEffect(() =>
         this.actions$.pipe(
             ofType(fromActions.signInEmail),
@@ -37,6 +60,7 @@ export class UserEffects {
                     switchMap(signInState =>
                         this.afs.doc<User>(`users/${ signInState.user.uid }`).valueChanges().pipe(
                             take(1),
+                            tap(() => this.router.navigate(['/'])),
                             map(user => fromActions.signInEmailSuccess({
                                 payload: {
                                     uid: signInState.user.uid,

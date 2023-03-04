@@ -19,7 +19,7 @@ export class NotificationService {
                     message
                 },
                 panelClass: [
-                    'mat-snackbar_error'
+                    'mat-snackbar_success'
                 ]
             }
         );
@@ -29,12 +29,12 @@ export class NotificationService {
         this.snackBar.openFromComponent(
             NotificationComponent,
             {
-                duration: 100000,
+                duration: 3000,
                 data: {
                     message
                 },
                 panelClass: [
-                    'mat-snackbar_success'
+                    'mat-snackbar_error'
                 ]
             }
         );

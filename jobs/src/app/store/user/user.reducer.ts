@@ -19,6 +19,18 @@ const initialState: UserState = {
 
 export const userReducer = createReducer(
     initialState,
+    on(fromActions.init, (state) => ({
+        ...state, loading: true
+    })),
+    on(fromActions.initAuthorized, (state, { payload }) => ({
+        ...state, entity: payload.user, loading: false, error:null
+    })),
+    on(fromActions.initUnAuthorized, (state) => ({
+        ...state, entity: null, loading: false, error: null
+    })),
+    on(fromActions.initError, (state, { payload }) => ({
+        ...state, error: payload.error
+    })),
     on(fromActions.signInEmail, (state) => ({
         ...state, loading: true
     })),

@@ -1,0 +1,10 @@
+Today's day was a mix of things. I have decided to find articles and videos that I saved for the best time and read / listen them. I'll try to quickly explain what I have learned from it, 
+"Eat a frog first" I think it is a gold rule, that I should apply in my life, it is when you should do unpleasant things first, so it increases your changes of doing it and by idea increace your stress
+and has only positive results. I listened about Signals and how they will work in Angular and I'm impressed, it allows you to code in synchronous declarative way, and I realized that I'm a big
+fan of declarative programming, although didn't master it yet. Also there were more pieces of advice about coding, how to manage tasks, what you should not do in interviews, meditation and so on. In total I spent about 2 hours,
+but I was distracting many times for messaging and I'm tired as well. Oh, I found two books about JavaScript
+
+Conclusion
+1. Revise saved articles and liked videos
+2. Got information about many different topics
+3. Got motivation for improving myself

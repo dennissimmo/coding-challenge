@@ -137,4 +137,8 @@ export class SharedComponent implements OnInit {
     onSuccess() {
         this.notificationService.success('Everything is fine!');
     }
+
+    onFilesChanged(urlPaths: string | string[]) {
+        console.log(urlPaths);
+    }
 }

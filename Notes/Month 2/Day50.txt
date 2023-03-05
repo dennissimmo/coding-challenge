@@ -1,0 +1,15 @@
+Today I have implemented files uploading with usage of FirebaseStorage and helper class for Angular implementation AngularFireStorage.
+For creating uploading functionality I used a directive that can be attached to any HTML element, when we click on an element, it opens modal FilesUpload component
+There are two options to download, with dragging files or through input wit type="file". For disabling default events behavior was used a dropzone directive, that .preventDefault() call and emits
+about hovering state and pass further dropped files. Inside files upload we catch files and call onDrop method, inside of it we handle type of files, if it is an image, set it to imageFile property, 
+otherwise push to filesList.
+Based on a type we display either image cropper component where passing imageFile or list of upload component, where we are passing each file as input param.
+When uploading of an single file is ready, upload component emits a download link for a file.
+Loading itself is implemented withing upload component through AngularFileUploadTask, it provides percentage and snapshot streams for displaying process of uploading, when uploading is finished
+I request download link for a file and emit it outside.
+When user closes a dialog, they will recieve links of loaded files
+
+Conclusion:
+1. Implemented files uploading with AngularFireStorage
+2. Understood how files uploading process at frontend is working
+3. Showed practical usage of directives by creating dropzone and fileUpload directive

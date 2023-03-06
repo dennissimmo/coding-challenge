@@ -11,7 +11,7 @@ export const environment: any = {
             appId: "1:321724389057:web:710fd93596a76365932640"
         },
         actionCodeSettings: {
-            url: "http://localhost:5200/demo",
+            url: "http://localhost:5200/profile/new",
             handleCodeInApp: true
         }
     }

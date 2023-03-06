@@ -1,0 +1,9 @@
+Today was an intresting task at work, so I decided to use it project as a task example. The goal is following, wrapper somehow Angular app to make it available on mobiles,
+so we can upload them to GooglePlay and AppStore and there is a solution: Capacitor - tool that "converts" web applications to Native mobile apps Android and IOS as well and provides
+set of APIs for working with location, camera, filesystem, notifications and so on. I successfully wraped jobs project with help of Capacitor and run that apps with Android Studio and Xcode,
+moreover I have tested final app on my own Iphone without a simulator. It's obvious that there are problems with UI and layout as layout is not updated for mobile devices at all.
+It was cool experience and tommorow I will investigate it more and try to run work project.
+
+Conclusion: 
+1. Started profile module
+2. Start using Capacitor for using Jobs app on mobile devices (IOS, Android)

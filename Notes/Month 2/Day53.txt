@@ -1,0 +1,7 @@
+Today I have finished Stepper component, author is used a bit complex  but at the same time interesting mechanism with Observables and Subjects for next, complete, cancel actions.
+So before actually move to another step of Stepper or complete stepper, we emit a check notification that is handled by components of stepper and they actually decide if we 
+can emit next or complete action. It use property name reference in order to emit proper subject based on check type, and then we subscribe to these Subjects inside Stepper 
+component for next and inside Form componet for Complete and Cancel. I hope that I will better understand how it is actually work in further lessons.
+
+Conclusion:
+1. Finished Stepper component

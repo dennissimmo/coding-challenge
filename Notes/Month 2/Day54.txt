@@ -1,0 +1,9 @@
+Today I was reviewing what I have learned for previous two months, I touched CSS part, course How to learn better and Angular topiscs such as Pipes, Dependency Injection, Binding, Interpolation
+and Ng-content. During analazying and repeating, I fixed some typos, misunderstanding, tried to explain everything that I know on this topic and after that read my notes about it. In some
+old notes there were many mistakes and not obvious explanations, I fixed it. If I didn't understand something how it exactly work I was stopping and repeat it again, practised it.
+
+Conclusion:
+
+1. Review stuff that I have learned before
+2. Fixed and updated notes about some topics
+3. Improved self-confidence

@@ -1,0 +1,8 @@
+Today I was learning JS methods: repeat, trim, trimStart, trimEnd, padStart, padEnd, search, match, matchAll and localeCompare, for all of them I have screenshots with results of calling them with
+different amount of parameters and arguments. Also I practised them on my own in StackBlitz, so when I would wanted to refresh my knowledge I can easily do it. Also for practicing those 
+methods I asked ChaptGPT to create some tasks with real examples that will help to practice those methods, first it created tasks with solutions and explanations, next I asked it hide solutions
+and left only tasks, then I solved one task and asked it to check, I did one typo in method's name and it noticed and told me I was almost right, it is like your personal teacher.
+
+Conclusion:
+1. Learnt JS string methods: repeat, trim, trimStart, trimEnd, padStart, padEnd, search, match, matchAll and localeCompare, practiced and wrote notes.
+2. Tested how ChaptGPT generates practical tasks for topics that I ask it

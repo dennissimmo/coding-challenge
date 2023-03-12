@@ -1,0 +1,9 @@
+Today I took 3 lessons about Java Collections and after that started to investigate how I can use ChaptGPT in order to improve my productivity, it is very exciting, how many things
+you can do with it in order to save your time and increase useful outcome of your actions. Especially I was testing how it can explain some pieces of code and rewrite them with following conventions,
+it is really awesome, if you see some "shit" code that is hard to understand, you can ask ChaptGPT to explain it for it. You can test your own code in many different ways, ask it to write tests for it,
+ask to offer some solutions and many other things.
+
+Conclusion:
+
+1. Took some lessons to remind Java Collections
+2. Discovered another use cases of ChaptGPT

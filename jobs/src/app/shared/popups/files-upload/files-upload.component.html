@@ -23,9 +23,7 @@
             <app-cropper [image]="imageFile" (changed)="onCrop($event)"></app-cropper>
         </ng-container>
 
-        <ng-container *ngIf="files">
-            <app-upload *ngFor="let file of files" [file]="file" (completed)="onUploadComplete($event)"></app-upload>
-        </ng-container>
+        <app-upload *ngFor="let file of files" [file]="file" (completed)="onUploadComplete($event)"></app-upload>
 
     </div>
     <div class="files-upload__footer" *ngIf="!imageFile">

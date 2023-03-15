@@ -56,7 +56,7 @@ export class UploadComponent implements OnInit, OnDestroy {
                 // emit download link
                 this.completed.next(this.downloadURL);
             })
-        );
+        ).subscribe();
     }
 
 }

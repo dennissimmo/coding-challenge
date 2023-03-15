@@ -80,7 +80,7 @@ export class DictionariesEffects {
                         })
                     )
                 ).pipe(
-                    map(([roles, specializations, qualifications, skills, countries]) => {
+                    map(([roles, qualifications, skills, specializations, countries]) => {
                         const dictionaries: Dictionaries = {
                             roles: addDictionary(roles),
                             specializations: addDictionary(specializations),

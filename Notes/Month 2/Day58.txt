@@ -1,0 +1,10 @@
+Within that day I created personal component, that is first step of creating profile, you enter your name, country and upload photo. For displaying the photo was created user-photo component, 
+simple round div, that displays an uploaded photo through background-url property, also I created professional component, but just added about and role it inputs. The next step is implementing
+complex forms for Employee and Recruiter, general architecture is following, we have a FormComponent is displays StepperComponent, stepper has two steps, PersonalComponent for personal information and 
+ProfessionalComponent for profession information (employee | recruiter). For each role there will be a separate component with separate FormGroup to make general structure more linear and destructure 
+complex interaction.
+
+Conclusion:
+1. Added two components for Personal and Professional information
+2. Fixed some bugs with uploading files
+3. Understood how we can destructure complex forms

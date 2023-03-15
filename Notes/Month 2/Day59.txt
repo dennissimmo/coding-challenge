@@ -1,0 +1,10 @@
+Today I implemented ExperiencesComponent that is a part of complex FormGroup and uses FormArray for dynamic creation of FormControls. I added RecruiterComponent and fixed some problems
+with union types for Employee and Recruiter form by using setter for an Input property and use type convertion to avoid typing errors.
+Also today I saw and used new mechanism that allows to tie multiple related controls and control other controls when some changes, it is implemented with creating additional wrapping contruction
+over existing Controls, that has methods changed() and map(), that we can trigger and pass to them some additional logic that should be performed with items (possible values) that we use in specific
+controls, control their selection, visibility, accessability and so on. I spent about 2+ hours for that lesson
+
+Conclusion:
+1. Added Experiences component with dynamic creation of FormControls
+2. Learned one more approach how we can tie multiple related FormControls
+3. Finished design part of Employee & Recruiter forms

@@ -13,11 +13,15 @@ import {Subject, takeUntil} from "rxjs";
 import {Dictionaries} from "@app/store/dictionaries";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {markFormGroupTouched, regexErrors} from "@app/shared";
+import {
+    RecruiterForm
+} from "@app/pages/profile/pages/form/components/professional/roles/recruiter/recruiter.component";
+import { EmployeeForm } from "@app/pages/profile/pages/form/components/professional/roles/employee/employee.component";
 
 export interface ProfessionalForm {
     about: string;
     roleId: string;
-    // role: EmployeeForm | RecruiterForm
+    role: RecruiterForm | EmployeeForm;
 }
 
 @Component({
@@ -48,7 +52,7 @@ export class ProfessionalComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         this.form = this.fb.group({
             roleId: [null, { updateOn: 'change', validators: [Validators.required] } ],
-            about: [null, { updateOn: 'blur', validators: [Validators.required] } ],
+            about: [null, { updateOn: 'blur'} ],
         });
 
         if (this.value) {
@@ -67,7 +71,7 @@ export class ProfessionalComponent implements OnInit, OnDestroy {
             }
 
             // type === 'complete'
-            this.stepper[type].next(true);
+            this.stepper[type].next(this.form.valid);
         })
     }
 

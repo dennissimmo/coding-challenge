@@ -8,4 +8,10 @@
         <app-input formControlName="about" ></app-input>
     </app-form-field>
 
+    <!-- Display employee or recruiter form based on roleId -->
+    <ng-container [ngSwitch]="form.controls.roleId.value">
+        <app-recruiter *ngSwitchCase="'recruiter'" name="role" [parent]="form" [value]="value?.role" [dictionaries]="dictionaries"></app-recruiter>
+        <app-employee *ngSwitchCase="'employee'" name="employee" [parent]="form" [value]="value?.role" [dictionaries]="dictionaries"></app-employee>
+    </ng-container>
+
 </form>

@@ -6,11 +6,12 @@ import {signUpEmail} from "./user.actions";
 import {Router} from "@angular/router";
 import {NotificationService} from "@app/services";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
-import {catchError, map, switchMap, take, tap} from "rxjs/operators";
+import { catchError, map, switchMap, take, tap, withLatestFrom } from "rxjs/operators";
 import {from, of} from "rxjs";
 import {environment} from "@env/environment";
 import { User } from "@app/models/backend";
-
+import firebase from "firebase/compat";
+import firestore = firebase.firestore;
 
 @Injectable()
 export class UserEffects {
@@ -118,5 +119,47 @@ export class UserEffects {
             )
         )
     );
+
+    create = createEffect(() =>
+        this.actions$.pipe(
+            ofType(fromActions.create),
+            map(({payload}) => payload.user),
+            withLatestFrom(this.afAuth.authState.pipe(take(1))),
+            map(([user, state]) => ({
+                ...user,
+                uid: state.uid,
+                email: state.email,
+                // created: firestore.FieldValue.serverTimestamp()
+            })),
+            switchMap((user: User) =>
+                from(this.afs.collection('users').doc(user.uid).set(user)).pipe(
+                    tap(() => this.router.navigate(['/profile', user.uid])),
+                    map(() => fromActions.createSuccess({ payload: { user } })),
+                    catchError(err => of(fromActions.createError({ payload: { error: err }})))
+                )
+            )
+            // fetch uid  of current user
+            // fetch User document record by uid
+            // merge record with UserRequest
+            // fetch firebase record
+            // update firebase record
+            // dispatch success or error action
+        )
+    );
+
+    update = createEffect(() =>
+        this.actions$.pipe(
+            ofType(fromActions.update),
+            switchMap(({ payload }) =>
+                from(this.afs.collection('users').doc(`${payload.user.uid}`).set(payload.user)).pipe(
+                    tap(() => this.router.navigate(['/profile', payload.user.uid])),
+                    map(() => fromActions.updateSuccess({ payload: { user: payload.user } })),
+                    catchError(err => of(fromActions.updateError({ payload: { error: err } })))
+                )
+            )
+        )
+    );
+
+
 
 }

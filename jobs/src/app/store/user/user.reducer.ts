@@ -57,7 +57,26 @@ export const userReducer = createReducer(
     })),
     on(fromActions.signOutError, (state, { payload }) => ({
         ...state, error: payload.error
-    }))
+    })),
+    on(fromActions.create, (state) => ({
+        ...state, loading: true,
+    })),
+    on(fromActions.createSuccess, (state, { payload }) => ({
+        ...state, loading: false, entity: payload.user
+    })),
+    on(fromActions.createError, (state, { payload }) => ({
+        ...state, loading: false, error: payload.error,
+    })),
+    on(fromActions.update, (state) => ({
+        ...state, loading: true,
+    })),
+    on(fromActions.updateSuccess, (state, { payload }) => ({
+        ...state, loading: false, entity: payload.user
+    })),
+    on(fromActions.updateError, (state, { payload }) => ({
+        ...state, loading: false, error: payload.error,
+    })),
+
 );
 
 export function reducer(state = initialState, action: Action) {

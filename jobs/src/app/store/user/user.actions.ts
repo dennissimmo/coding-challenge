@@ -1,5 +1,5 @@
 import {createAction, props} from "@ngrx/store";
-import {EmailPasswordCredentials, User} from "@app/store/user/user.models";
+import { EmailPasswordCredentials, User, UserCreateRequest } from "@app/store/user/user.models";
 
 export const init = createAction(
       "[User] Init: Start"
@@ -66,3 +66,35 @@ export const signOutError = createAction(
     '[User] Sign Out : Error',
     props<{ payload: { error: string } }>()
 );
+
+
+export const create = createAction(
+    '[User] Create : Start',
+    props<{ payload: { user: UserCreateRequest }}>()
+);
+
+export const createSuccess = createAction(
+    '[User] Create : Success',
+    props<{ payload: { user: User } }>()
+);
+
+export const createError = createAction(
+    '[User] Create : Error',
+    props<{ payload: { error: string } }>()
+);
+
+export const update = createAction(
+    '[User] Update : Start',
+    props<{ payload: { user: User }}>()
+);
+
+export const updateSuccess = createAction(
+    '[User] Update : Success',
+    props<{ payload: { user: User } }>()
+);
+
+export const updateError = createAction(
+    '[User] Update : Error',
+    props<{ payload: { error: string } }>()
+);
+

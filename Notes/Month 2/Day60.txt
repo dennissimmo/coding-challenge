@@ -1,0 +1,52 @@
+As for previous challenge I want to split month on separate parts based on theirs themes and what I have been learning.
+From the beginning I can said that this challenge was not so successfull as previous one, had more delays and gaps but was mainly focused on development of an Angular app and its architecture.
+
+Test Driven Development in Angular
+
+I was impressed of TDD approach by lectures in university and wanted to try it in Angular and had already as I thought suitable course.
+I took few lessons but I fast realized that course is out of date and author do not expaling things well and I have to figure out how to properly update syntax to fix tests.
+I can only remember that we were creating components and checked if some components were rendered, for services we checked if methods were called with parameters, compared returned values.
+For comparison I was searching good courses about testing in Angular but found only middle by quality courses, main that I learned that writing Component tests is useless and I decided wrong course.
+
+Architecture in Angular
+
+It is a really large topic, there was done much work in that project, I was trying to use latest syntax of an Angular except Typed Forms.
+
+As that project is not finished I will not add detailed explenation what I did during that course but in a few words:
+Was created an Angular application with SCAM (Singular Component Angular Module) architecture using Firebase, NGRX and RXJS, library of custom shared componets 
+that implements ControlValueAccessor and behave like FormControls and support all of that features, using 7 - 1 styles architecture and valid approach for customizing Angular Material Components.
+I was working with Files Uploading and Stepper Component, moreover I implemented them by following author instructions, understood how important is make general controls with types and how
+can easily it can be to build complex forms using them, how to type backend and frontend models and define general architecture/interaction of an app, before starting writing features
+
+
+Finish Learning part of CSS Demystified
+
+It were final lectures that told me about last three levels of BLOOM'S TAXONOMY. I understood that I should do notes of everything that I think, learn, discover and do it by my own words,
+expirement with different approaches, properties when practicing something. Figure out how important to teach other people about what you have learned and know, because it can show your 
+real level of knowledge and what is more important your understanding of specific theme. I should start write some articles about what I have learned, what problems I encountered and how fixed them,
+help another people to solve their problems in Angular on different forums in Telegram chats. Importance of thinking in advance when projecting layouts and creation of CodePen also were touched.
+In general course was very usefull, I liked that author as a teacher he is really good.
+
+JS strings
+
+It were one lesson for Strings methods, some of them were really new, such as padStart, trimStart, search and others. I can say that I hardly remember specificity of their work with different
+paramaters, but I sure that I can name their purpose. Why I cannot do it, because I did not do practical exercises for that methods and didn't use them once since last 3 weeks, but I can repeat 
+their usage as I took some screenshots of their work with different parameters and can do some practice as well
+
+English Interview preparation
+
+As I want to find a new job integral part of my journey will be interviews in English, so I decided to prepare for it. From that course I learned some vocabulary and phrases that you will hear and 
+can use on interviews, understood that you should be genuine, yourself, do not memorize, be memorable, polite, properly dressed, prepared, do not answer questions that you dont undestand, how 
+to show your strengs and weaknesses, self introduction and so on.
+
+Conclusion:
+
+It is hard to evaluate real cost of that monthly challenge, I'll be honest with myself, last two weeks I was working with very abstract tasks almost not related with UI and abstractic in their 
+description, so I hadn't a posibility to use learned approached in work project, as about interviews I didn't have any interview for these two months that calls into question, does I really want
+to change job, or I just pretending? I think all cards will be opened when I will have my first interview as JavaScript Angular Developer after almost 2 years of programming with Typescript and
+Angular and partly on Java. Because of delays and skips some days, progress is not obvious as it can be(
+
+I think that there will not be following course in a such formal way as it was before, I do not always have enough time and I have to divide more time for learning at University, English learning,
+but I can say following: 
+
+Challenges are what make life interesting and overcoming them is what makes life meaningful (Joshua J. Marine)

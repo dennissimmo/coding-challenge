@@ -8,8 +8,13 @@
   </ul>
 </app-toolbar>
 <div class="card-wrapper">
-  <app-card [iconClassName]="'timeline'" [title]="'Title'" [subtitle]="'Subtitle'">
+  <app-card [iconClassName]="'timeline'" [title]="'Card'" [subtitle]="'Components'">
     <div body>Body content</div>
     <div footer>Footer content</div>
+  </app-card>
+  <app-card [title]="'Accordion'" [subtitle]="'Components'">
+    <div body>
+      <app-accordion [items]="items"></app-accordion>
+    </div>
   </app-card>
 </div>

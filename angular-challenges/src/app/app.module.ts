@@ -8,12 +8,14 @@ import { CardComponent } from './components/card/card.component';
 import { FaConfig, FaIconLibrary, FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent
+    CardComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,

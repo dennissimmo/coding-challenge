@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AccordionItem } from "./accordion-item";
+import { AccordionItem } from "./accordion-item.interface";
 
 @Component({
   selector: 'app-accordion',

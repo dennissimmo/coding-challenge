@@ -1,9 +1,10 @@
 @import "src/styles";
 
 .accordion-container  {
+  @include box-shadow();
 
   .accordion-item {
-    @include box-shadow();
+    border-bottom: 1px solid rgb(221, 221, 221);
     padding: 10px;
   }
 
@@ -31,7 +32,7 @@
 .rotate {
   transform: rotate(-180deg);
 }
-
+// We can did the same effect with display: none => display: block
 .expanded {
   height: min-content;
 }

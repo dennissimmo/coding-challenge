@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card__header header">
+    <div class="header__icon">
+      <fa-icon *ngIf="iconClassName" [icon]="iconClassName"></fa-icon>
+    </div>
+    <div class="header__title">{{ title }}</div>
+    <div class="header__sub-title">{{ subtitle }}</div>
+  </div>
+  <div class="card__body">
+    <ng-content select="[body]"></ng-content>
+  </div>
+  <div class="card__footer">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="accordion-container">
+  <div class="accordion-item accordion" *ngFor="let item of items">
+    <div class="accordion__header" (click)="item.isExpanded = !item.isExpanded">
+      <p class="accordion__title">{{ item.title }}</p>
+      <fa-icon class="accordion__status" [icon]="'chevron-down'" [ngClass]="{ 'rotate': item.isExpanded }"></fa-icon>
+    </div>
+    <div *ngIf="item.isExpanded" class="accordion__content" [ngClass]="item.isExpanded ? 'expanded' : 'collapsed'">
+      {{ item.content }}
+    </div>
+  </div>
+</div>

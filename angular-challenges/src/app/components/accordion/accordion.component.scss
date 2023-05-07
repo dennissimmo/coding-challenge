@@ -1,0 +1,41 @@
+@import "src/styles";
+
+.accordion-container  {
+
+  .accordion-item {
+    @include box-shadow();
+    padding: 10px;
+  }
+
+  .accordion {
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+
+    }
+
+    &__status {
+      transition: transform .2s ease-in;
+    }
+
+    &__content {
+      padding: 10px 0;
+    }
+  }
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.expanded {
+  height: min-content;
+}
+
+.collapsed {
+  height: 0;
+}

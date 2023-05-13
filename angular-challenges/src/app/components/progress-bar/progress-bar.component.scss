@@ -1,0 +1,24 @@
+@use "colors";
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  background-color: colors.$light-grey;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+
+  &__full {
+    position: absolute;
+    border-radius: inherit;
+    height: inherit;
+    background-color: colors.$blue;
+    transition: width 1s;
+  }
+
+  &__text {
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+}

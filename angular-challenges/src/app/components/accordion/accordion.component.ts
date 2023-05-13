@@ -12,4 +12,7 @@ export class AccordionComponent {
   @Input()
   items: AccordionItem[];
 
+  toggle(item: AccordionItem): void {
+    item.isExpanded = !item.isExpanded
+  }
 }

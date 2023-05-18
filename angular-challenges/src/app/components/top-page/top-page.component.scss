@@ -1,0 +1,17 @@
+@import "colors";
+
+$size: 60px;
+$margin: 20px;
+
+.circle {
+  position: fixed;
+  right: $margin;
+  bottom: $margin;
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  background-color: $red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

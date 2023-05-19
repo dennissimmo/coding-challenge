@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <app-card [title]="'Top Page'" [subtitle]="'Components'">
+    <div body>
+      Scroll down to 400px to show it
+    </div>
+  </app-card>
+  <app-card [iconClassName]="'timeline'" [title]="'Card'" [subtitle]="'Components'">
+    <div body>Body content</div>
+    <div footer>Footer content</div>
+  </app-card>
+  <app-card [title]="'Accordion'" [subtitle]="'Components'">
+    <div body>
+      <app-accordion [items]="items"></app-accordion>
+    </div>
+  </app-card>
+  <app-card [title]="'Progress Bar'" [subtitle]="'Components'">
+    <div body>
+      <app-progress-bar [value]="progress" [max]="150"></app-progress-bar>
+    </div>
+    <div footer>
+      <button (click)="update()">Update progress</button>
+    </div>
+  </app-card>
+  <app-card [title]="'Star Ratings'" [subtitle]="'Components'">
+    <div body>
+      <app-star-ratings [rating]="2">
+
+      </app-star-ratings>
+    </div>
+  </app-card>
+
+</div>

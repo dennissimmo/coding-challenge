@@ -2,8 +2,13 @@
   display: flex;
   gap: 10px;
   list-style: none;
+
+  &__link {
+    text-transform: none;
+  }
 }
 
 .card-wrapper {
   padding: 10px;
+
 }

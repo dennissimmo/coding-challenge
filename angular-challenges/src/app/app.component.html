@@ -1,20 +1,14 @@
 <app-toolbar [title]="'100 Angular Challenge'">
   <ul class="nav navigation">
-    <li class="navigation__link">Components</li>
-    <li class="navigation__link">Directives</li>
-    <li class="navigation__link">Pipes</li>
-    <li class="navigation__link">Services</li>
-    <li class="navigation__link">Other</li>
+    <li class="navigation__link"><a routerLink="components">Components</a></li>
+    <li class="navigation__link"><a routerLink="directives">Directives</a></li>
+    <li class="navigation__link"><a routerLink="pipes">Pipes</a></li>
+    <li class="navigation__link"><a routerLink="services">Services</a></li>
+    <li class="navigation__link"><a>Other</a></li>
   </ul>
 </app-toolbar>
 <div class="card-wrapper">
-  <app-card [iconClassName]="'timeline'" [title]="'Card'" [subtitle]="'Components'">
-    <div body>Body content</div>
-    <div footer>Footer content</div>
-  </app-card>
-  <app-card [title]="'Accordion'" [subtitle]="'Components'">
-    <div body>
-      <app-accordion [items]="items"></app-accordion>
-    </div>
-  </app-card>
+  <router-outlet></router-outlet>
 </div>
+
+<app-top-page></app-top-page>

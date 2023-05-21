@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,7 +8,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnChanges {
+export class CardComponent {
 
   faCoffee = faCoffee;
 
@@ -20,9 +20,5 @@ export class CardComponent implements OnChanges {
 
   @Input()
   subtitle: string;
-
-  ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
-  }
 
 }

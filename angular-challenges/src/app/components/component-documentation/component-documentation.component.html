@@ -28,5 +28,16 @@
       </app-star-ratings>
     </div>
   </app-card>
-
+  <app-card [title]="'Credit Card Input'" [subtitle]="'Components'">
+    <div body>
+      <app-credit-card-input
+        [cardNumber]="'3624305564149080'"
+        [isEditable]="true"
+      ></app-credit-card-input>
+      <app-credit-card-input
+        [cardNumber]="'3624305564149080'"
+        [isEditable]="false"
+      ></app-credit-card-input>
+    </div>
+  </app-card>
 </div>

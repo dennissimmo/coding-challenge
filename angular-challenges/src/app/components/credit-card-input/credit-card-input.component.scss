@@ -1,0 +1,13 @@
+.form-field {
+  position: relative;
+
+  fa-icon {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+  }
+
+  input {
+    padding-left: 30px;
+  }
+}

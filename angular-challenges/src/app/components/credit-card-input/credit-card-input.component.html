@@ -1,0 +1,10 @@
+<div class="form-field">
+  <ng-container [ngSwitch]="cardType">
+    <fa-icon *ngSwitchCase="'visa'" [icon]="['fab', 'cc-visa']"></fa-icon>
+    <fa-icon *ngSwitchCase="'amex'" [icon]="['fab', 'cc-amex']"></fa-icon>
+    <fa-icon *ngSwitchCase="'mastercard'" [icon]="['fab', 'cc-mastercard']"></fa-icon>
+    <fa-icon *ngSwitchCase="'discover'" [icon]="['fab', 'cc-discover']"></fa-icon>
+    <fa-icon *ngSwitchDefault [icon]="['fas', 'credit-card']"></fa-icon>
+  </ng-container>
+  <input [(ngModel)]="cardNumber" (ngModelChange)="updateCardType($event)" required maxlength="16" [readOnly]="!isEditable">
+</div>

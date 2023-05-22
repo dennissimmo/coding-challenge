@@ -1,1 +1,14 @@
-<p>pipe-documentation works!</p>
+<app-card [title]="'Credit Card'" [subtitle]="'Pipes'">
+  <div body>
+    {{ '4149499648990409' | creditCard }}
+<!--    {{ '12345678904444324' | creditCard }}-->
+<!--    {{ '123456a8904444' | creditCard }}-->
+  </div>
+</app-card>
+<app-card [title]="'Truncate'" [subtitle]="'Pipes'">
+ <div body>
+   {{ 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem consectetur fuga ipsa ipsam labore magnam, natus nihil nobis nostrum officiis provident quia reprehenderit saepe vel veritatis vitae voluptas voluptatem?'
+   | truncate:50
+   }}
+ </div>
+</app-card>

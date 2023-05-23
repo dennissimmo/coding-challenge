@@ -1,42 +1,49 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { CardComponent } from './components/card/card.component';
 import { FaConfig, FaIconLibrary, FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 import { TopPageComponent } from './components/top-page/top-page.component';
+import {
+  ComponentDocumentationComponent
+} from './components/component-documentation/component-documentation.component';
+import { CommonModule } from "@angular/common";
+import { BrowserModule } from "@angular/platform-browser";
+import { LoaderComponent } from './components/loader/loader.component';
+import { SharedModule } from "./shared/shared.module";
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+import { FormsModule } from "@angular/forms";
+import { PipesModule } from "./pipes/pipes.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
-import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
-import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
-import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    ComponentDocumentationComponent,
     ToolbarComponent,
-    CardComponent,
+    TopPageComponent,
     AccordionComponent,
     ProgressBarComponent,
     StarRatingsComponent,
-    TopPageComponent,
-    ComponentDocumentationComponent,
-    PipeDocumentationComponent,
-    ServiceDocumentationComponent,
-    DirectiveDocumentationComponent
+    AppComponent,
+    LoaderComponent,
+    CreditCardInputComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
+    AppRoutingModule,
     FontAwesomeModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
+    PipesModule,
+    SharedModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -47,7 +54,7 @@ export class AppModule {
     private library: FaIconLibrary,
     private config: FaConfig,
   ) {
-    library.addIconPacks(fas, far);
+    library.addIconPacks(fas, far, fab);
     config.fixedWidth = true;
   }
 

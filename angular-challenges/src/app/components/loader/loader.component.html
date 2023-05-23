@@ -1,8 +1,9 @@
 <div *ngIf="isLoading" class="overlay">
-  <div class="loader">
-    <!--  <div class="loader__inner">-->
-
-    <!--  </div>-->
-  </div>
-
+  <ng-container [ngSwitch]="loaderType">
+    <div *ngSwitchCase="loaderTypeEnum.CIRCULAR" class="loader">
+    </div>
+    <h1 *ngSwitchCase="loaderTypeEnum.LINEAR">
+      {{ loadingText }}
+    </h1>
+  </ng-container>
 </div>

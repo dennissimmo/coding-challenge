@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CreditCardPipe implements PipeTransform {
 
-  transform(value: string): string {
+  transform(value: string, hiddenSymbolsLength = 0): string {
     const correctLength = 16;
     if (value.length > correctLength || value.length < correctLength) {
       return 'Invalid length';
@@ -15,7 +15,7 @@ export class CreditCardPipe implements PipeTransform {
       return 'Incorrect format';
     }
 
-    return this.formatCardNumber(value);
+    return this.formatCardNumber(value, hiddenSymbolsLength);
   }
 
   private isAllNumbers(card: string): boolean {
@@ -24,8 +24,13 @@ export class CreditCardPipe implements PipeTransform {
     return numbersInCard.length === card.length;
   }
 
-  private formatCardNumber(card: string): string {
-    const parts = card.match(/[0-9]{1,4}/g);
+  private formatCardNumber(card: string, hiddenLength: number): string {
+    let cardNumber = card;
+    if (hiddenLength) {
+      cardNumber = card.substring(0, hiddenLength)
+        .replaceAll(/\d/g, "x") + card.substring(hiddenLength);
+    }
+    const parts = cardNumber.match(/[\s\S]{1,4}/g);
     if (parts) {
       return parts.join("-");
     }

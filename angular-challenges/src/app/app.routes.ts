@@ -1,17 +1,17 @@
 import { Route } from "@angular/router";
+import { ServiceDocumentationComponent } from "./services/service-documentation/service-documentation.component";
 import {
   ComponentDocumentationComponent
 } from "./components/component-documentation/component-documentation.component";
-import {
-  DirectiveDocumentationComponent
-} from "./directives/directive-documentation/directive-documentation.component";
-import { PipeDocumentationComponent } from "./pipes/pipe-documentation/pipe-documentation.component";
-import { ServiceDocumentationComponent } from "./services/service-documentation/service-documentation.component";
-import { CardComponent } from "./components/card/card.component";
 
 export const routes: Route[] = [
   {
     path: '',
+    pathMatch: 'full',
+    redirectTo: 'components'
+  },
+  {
+    path: 'components',
     component: ComponentDocumentationComponent
   },
   {

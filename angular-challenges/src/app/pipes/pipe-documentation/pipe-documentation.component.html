@@ -12,3 +12,12 @@
    }}
  </div>
 </app-card>
+<app-card [title]="'Flatten'" [subtitle]="'Pipes'">
+  <div body>
+    {{ flattenData | flatten }}
+  </div>
+  <div footer>
+    <button (click)="pushItem()">Push item</button>
+    <button (click)="reassign()">Reassign data</button>
+  </div>
+</app-card>

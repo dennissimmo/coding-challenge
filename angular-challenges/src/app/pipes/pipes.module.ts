@@ -5,12 +5,14 @@ import { PipesRoutingModule } from "./pipes-routing.module";
 import { TruncatePipe } from "./truncatePipe/truncate.pipe";
 import { CreditCardPipe } from './creditCardPipe/credit-card.pipe';
 import { SharedModule } from "../shared/shared.module";
+import { FlattenPipe } from './flattenPipe/flatten.pipe';
 
 @NgModule({
   declarations: [
     PipeDocumentationComponent,
     TruncatePipe,
-    CreditCardPipe
+    CreditCardPipe,
+    FlattenPipe
   ],
   exports: [
     TruncatePipe

@@ -21,11 +21,12 @@ export class LoaderComponent {
   dotsCount: number;
   intervalId: number;
 
+  @Input() isLoading = true;
+
   @Input()
   set type(loaderType: LOADER_TYPE) {
     this.handleLoaderType(loaderType);
   }
-  @Input() isLoading = true;
 
   constructor() {
     this.loadingText = this.defaultText;

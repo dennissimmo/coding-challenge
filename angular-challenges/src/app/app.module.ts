@@ -22,6 +22,7 @@ import { CreditCardInputComponent } from './components/credit-card-input/credit-
 import { FormsModule } from "@angular/forms";
 import { PipesModule } from "./pipes/pipes.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     AppComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
   ],
   imports: [
     CommonModule,

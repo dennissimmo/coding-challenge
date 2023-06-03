@@ -43,7 +43,7 @@ export class CreditCardInputComponent implements OnInit {
   }
 
   updateCardType(card: string): void {
-    this.cardType = this.getCardType(this.cardNumber);
+    this.cardType = this.getCardType(card);
   }
 
   getCardType(cardNumber: string): CardType {

@@ -19,5 +19,4 @@ export class ProgressBarComponent {
   @Input()
   public max = 100;
 
-
 }

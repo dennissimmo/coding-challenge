@@ -23,6 +23,8 @@ import { FormsModule } from "@angular/forms";
 import { PipesModule } from "./pipes/pipes.module";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
+import { QuoteComponent } from './components/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { TwitterPostComponent } from './components/twitter-post/twitter-post.com
     LoaderComponent,
     CreditCardInputComponent,
     TwitterPostComponent,
+    LinkedinPostComponent,
+    QuoteComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,42 @@
+@import "colors";
+
+.quote {
+  display: flex;
+  border-left: 10px solid #21a4ff;
+  background-color: $blue;
+  color: white;
+  flex-direction: column;
+
+  &__text {
+
+  }
+
+  &__author {
+  }
+}
+
+.text {
+  display: flex;
+
+  &__icon {
+    margin-right: .5rem;
+  }
+
+  &__content {
+    padding-top: 1rem;
+  }
+}
+
+.author {
+  align-self: flex-end;
+  padding: 1rem;
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__occupation {
+    font-style: italic;
+  }
+}

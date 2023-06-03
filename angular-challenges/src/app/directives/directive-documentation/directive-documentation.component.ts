@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DirectiveDocumentationComponent {
 
+  onClicked(): void {
+    console.log('Debounced click triggered');
+  }
 }

@@ -21,3 +21,8 @@
     <button (click)="reassign()">Reassign data</button>
   </div>
 </app-card>
+<app-card [title]="'Filter Term'" [subtitle]="'Pipes'">
+  <div body>
+    {{ term | filterTerm: 'job' }}
+  </div>
+</app-card>

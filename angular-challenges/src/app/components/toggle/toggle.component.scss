@@ -1,0 +1,19 @@
+.toggle-outer {
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 2px;
+
+  .toggle-inner {
+
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: green;
+    cursor: pointer;
+  }
+
+}
+

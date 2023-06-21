@@ -33,6 +33,8 @@ export class ComponentDocumentationComponent {
         'Brazil',
         'India',
     ];
+    counterMin = 0;
+    counterMax = 200;
 
     constructor() {}
 

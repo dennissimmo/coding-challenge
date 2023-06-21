@@ -1,0 +1,37 @@
+@import "colors";
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.counter {
+  display: flex;
+  width: 150px;
+  height: 30px;
+}
+
+%counter-btn {
+  flex: 0 0 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.minus {
+  @extend %counter-btn;
+  background-color: $red;
+}
+
+.value {
+}
+
+.plus {
+  @extend %counter-btn;
+  background-color: $green;
+}

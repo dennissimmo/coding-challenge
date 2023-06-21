@@ -10,7 +10,9 @@ export class FilterTermPipe implements PipeTransform {
         }
 
         return this.joinArrayInString(
-            value.filter((str) => str.includes(term))
+            value.filter((str) =>
+                str.toLowerCase().includes(term.toLowerCase())
+            )
         );
     }
 

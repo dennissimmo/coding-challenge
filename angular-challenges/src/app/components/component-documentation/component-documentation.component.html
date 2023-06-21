@@ -65,4 +65,9 @@
       <app-toggle></app-toggle>
     </div>
   </app-card>
+  <app-card [title]="'Rich Text Viewer'" [subtitle]="'Components'">
+    <div body>
+      <app-rich-text-viewer [htmlText]="'<ng-template>Content</ng-template>'"></app-rich-text-viewer>
+    </div>
+  </app-card>
 </div>

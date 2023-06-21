@@ -21,6 +21,18 @@ export class ComponentDocumentationComponent {
         },
     ];
     progress = 25;
+    itemsList = [
+        'United States',
+        'Canada',
+        'United Kingdom',
+        'Germany',
+        'France',
+        'Australia',
+        'Japan',
+        'China',
+        'Brazil',
+        'India',
+    ];
 
     constructor() {}
 

@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <app-debounce-search placeholder=Search [searchTerm]="searchTerm" (termUpdated)="onTermUpdated($event)"></app-debounce-search>
+  <div class="list" *ngIf="searchTerm && !hasBeenSelected">
+    <div *ngFor="let item of list | filterTerm: searchTerm" class="list__item" (click)="selectItem(item)">
+      {{ item }}
+    </div>
+  </div>
+</div>

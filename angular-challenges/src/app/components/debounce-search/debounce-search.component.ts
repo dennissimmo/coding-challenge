@@ -1,4 +1,11 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+    Component,
+    EventEmitter,
+    Input,
+    OnDestroy,
+    OnInit,
+    Output,
+} from '@angular/core';
 import {
     debounceTime,
     distinctUntilChanged,
@@ -13,11 +20,12 @@ import { tap } from 'rxjs/operators';
     templateUrl: './debounce-search.component.html',
     styleUrls: ['./debounce-search.component.scss'],
 })
-export class DebounceSearchComponent {
-    @Input() interval: number;
+export class DebounceSearchComponent implements OnInit, OnDestroy {
+    @Input() searchTerm: string;
+    @Input() placeholder: string;
+    @Input() interval = 500;
     @Output() termUpdated = new EventEmitter<string>();
 
-    searchTerm: string;
     searchTermSubject = new Subject<string>();
     searchTerm$: Observable<string>;
     subscription: Subscription;

@@ -16,7 +16,7 @@ import { FilterTermPipe } from './filterTerm/filter-term.pipe';
         FlattenPipe,
         FilterTermPipe,
     ],
-    exports: [TruncatePipe],
+    exports: [TruncatePipe, FilterTermPipe],
     imports: [CommonModule, PipesRoutingModule, SharedModule],
 })
 export class PipesModule {}

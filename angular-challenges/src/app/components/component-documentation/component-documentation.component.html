@@ -75,5 +75,9 @@
       <app-debounce-search [interval]="250" (termUpdated)="onTermUpdated($event)"></app-debounce-search>
     </div>
   </app-card>
-
+  <app-card [title]="'Search List'" [subtitle]="'Components'">
+    <div body>
+      <app-search-list [list]="itemsList"></app-search-list>
+    </div>
+  </app-card>
 </div>

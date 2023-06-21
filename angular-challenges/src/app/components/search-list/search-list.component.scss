@@ -1,0 +1,18 @@
+@import "src/styles";
+@import "src/styles/colors";
+
+.wrapper {
+
+}
+
+.list {
+  @include box-shadow;
+  cursor: pointer;
+
+  &__item {
+    padding: .5rem;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}

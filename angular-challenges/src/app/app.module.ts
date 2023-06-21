@@ -27,6 +27,7 @@ import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.
 import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text-viewer.component';
+import { DebounceSearchComponent } from './components/debounce-search/debounce-search.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,

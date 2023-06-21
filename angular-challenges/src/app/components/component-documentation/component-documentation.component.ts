@@ -27,4 +27,8 @@ export class ComponentDocumentationComponent {
     update(): void {
         this.progress = 150;
     }
+
+    onTermUpdated($event: string) {
+        console.log($event);
+    }
 }

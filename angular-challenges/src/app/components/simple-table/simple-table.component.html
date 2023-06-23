@@ -1,0 +1,33 @@
+<!-- My approach with divs -->
+<div class="table">
+  <div class="header">
+    <div class="cell" *ngFor="let headerCell of data[0] | keyvalue">
+      {{ headerCell.key }}
+    </div>
+  </div>
+  <div class="row-container">
+    <div class="row" *ngFor="let row of data">
+      <div class="cell" *ngFor="let cell of row | keyvalue">
+        {{ cell.value }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Author Course approach with table -->
+<!--<table>-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <th *ngFor="let header of data[0] | keyvalue">-->
+<!--        {{ header.key }}-->
+<!--      </th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--    <tr *ngFor="let row of data">-->
+<!--      <td *ngFor="let rowData of row | keyvalue">-->
+<!--        {{ rowData.value }}-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--  </tbody>-->
+<!--</table>-->

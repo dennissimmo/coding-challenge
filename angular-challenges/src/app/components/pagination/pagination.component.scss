@@ -1,0 +1,35 @@
+@import "mixins";
+@import "colors";
+
+.wrapper {
+  display: flex;
+  gap: .5rem;
+}
+
+
+
+.prev, .next {
+
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  @include box-shadow();
+
+  &__active {
+    color: white;
+    background-color: $blue;
+  }
+
+  &__disabled {
+    background-color: #eee;
+  }
+}
+
+

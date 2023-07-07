@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="prev circle" (click)="clickPrev()" [class.circle__disabled]="!hasPrevious">
+    <fa-icon [icon]="'chevron-left'"></fa-icon>
+  </div>
+  <ng-container *ngFor="let page of pages">
+    <div class="circle" (click)="updateActive(page)" [class.circle__active]="activePage === page">{{ page }}</div>
+  </ng-container>
+  <div class="next circle" (click)="clickNext()" [class.circle__disabled]="!hasNext">
+    <fa-icon [icon]="'chevron-right'"></fa-icon>
+  </div>
+</div>

@@ -1,4 +1,14 @@
 <div class="wrapper">
+  <app-card [title]="'Tabs'" [subtitle]="'Components'">
+    <div body>
+      <app-tabs [tabs]="tabs" [activeIndex]="0">
+        <app-tab title="Quotes">
+          <app-accordion  [items]="items"></app-accordion>
+        </app-tab>
+        <app-tab title="Options"><app-progress-bar [value]="progress" [max]="150"></app-progress-bar></app-tab>
+      </app-tabs>
+    </div>
+  </app-card>
   <app-card [title]="'Top Page'" [subtitle]="'Components'">
     <div body>
       Scroll down to 400px to show it

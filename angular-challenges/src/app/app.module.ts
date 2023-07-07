@@ -34,6 +34,8 @@ import { SearchListComponent } from './components/search-list/search-list.compon
 import { CounterComponent } from './components/counter/counter.component';
 import { SimpleTableComponent } from './components/simple-table/simple-table.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { TabComponent } from './components/tabs/tab/tab.component';
 
 @NgModule({
     declarations: [
@@ -56,6 +58,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
         CounterComponent,
         SimpleTableComponent,
         PaginationComponent,
+        TabsComponent,
+        TabComponent,
     ],
     imports: [
         CommonModule,

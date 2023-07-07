@@ -1,0 +1,19 @@
+.container {
+
+  .tab-header {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .tab-title {
+    margin-bottom: .5rem;
+    cursor: pointer;
+
+    &__active {
+      border-bottom: 2px solid blue;
+    }
+  }
+
+  .tab-content {
+  }
+}

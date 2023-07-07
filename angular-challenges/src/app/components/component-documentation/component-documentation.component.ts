@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
+import { Tab } from '../tabs/tabs.component';
 
 export interface Person {
     name: string;
@@ -69,6 +70,16 @@ export class ComponentDocumentationComponent {
             birthDate: new Date(1996, 6, 9),
         },
         { name: 'Ava', surname: 'Thomas', birthDate: new Date(1989, 3, 5) },
+    ];
+    tabs: Tab[] = [
+        {
+            title: 'Quotes',
+            isActive: true,
+        },
+        {
+            title: 'Options',
+            isActive: false,
+        },
     ];
 
     constructor() {

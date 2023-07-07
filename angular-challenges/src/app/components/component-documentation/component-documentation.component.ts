@@ -82,6 +82,8 @@ export class ComponentDocumentationComponent {
         },
     ];
 
+    selectedIndex = 0;
+
     constructor() {
         // Add additional properties to each person object
         this.people = this.people.map((person) => {

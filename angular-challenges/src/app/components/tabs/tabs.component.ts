@@ -9,7 +9,6 @@ import {
     Output,
     QueryList,
 } from '@angular/core';
-import { TabComponent } from './tab/tab.component';
 
 export interface Tab {
     title: string;
@@ -21,40 +20,15 @@ export interface Tab {
     templateUrl: './tabs.component.html',
     styleUrls: ['./tabs.component.scss'],
 })
-export class TabsComponent implements OnInit, AfterContentInit {
+export class TabsComponent {
     @Input() tabs: Tab[];
-    @Input() activeIndex: number;
-    @Output() tabChanged = new EventEmitter<string>();
-
-    @ContentChildren(TabComponent, { read: ElementRef })
-    tabsComponents: QueryList<ElementRef>;
+    @Output() tabChanged = new EventEmitter<number>();
 
     activeTab: string;
 
-    ngOnInit(): void {}
-
-    ngAfterContentInit(): void {
-        if (this.activeIndex !== undefined) {
-            const activeTab = this.tabs[this.activeIndex]?.title;
-            this.updateTab(activeTab);
-        } else {
-            this.activeTab = this.tabs.find((tab) => tab.isActive)?.title || '';
-        }
-    }
-
-    updateTab(title: string) {
+    updateTab(title: string, index: number) {
         this.tabs.forEach((tab) => (tab.isActive = tab.title === title));
         this.activeTab = title;
-        this.updateActiveTabStyles();
-        this.tabChanged.emit();
-    }
-
-    updateActiveTabStyles(): void {
-        this.tabsComponents.forEach((tab) => {
-            tab.nativeElement.style.display = 'none';
-            if (tab.nativeElement.title === this.activeTab) {
-                tab.nativeElement.style.display = 'block';
-            }
-        });
+        this.tabChanged.emit(index);
     }
 }

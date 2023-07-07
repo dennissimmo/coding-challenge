@@ -1,11 +1,9 @@
 <div class="wrapper">
   <app-card [title]="'Tabs'" [subtitle]="'Components'">
     <div body>
-      <app-tabs [tabs]="tabs" [activeIndex]="0">
-        <app-tab title="Quotes">
-          <app-accordion  [items]="items"></app-accordion>
-        </app-tab>
-        <app-tab title="Options"><app-progress-bar [value]="progress" [max]="150"></app-progress-bar></app-tab>
+      <app-tabs [tabs]="tabs" (tabChanged)="selectedIndex = $event">
+        <app-accordion *ngIf="selectedIndex === 0"  [items]="items"></app-accordion>
+        <app-progress-bar *ngIf="selectedIndex === 1" [value]="progress" [max]="150"></app-progress-bar>
       </app-tabs>
     </div>
   </app-card>

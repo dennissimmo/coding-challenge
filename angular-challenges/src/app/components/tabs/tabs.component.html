@@ -1,6 +1,6 @@
 <div class="container">
   <div class="tab-header">
-    <div class="tab-title" *ngFor="let tab of tabs" (click)="updateTab(tab.title)" [class.tab-title__active]="tab.isActive">
+    <div class="tab-title" *ngFor="let tab of tabs; let i = index;" (click)="updateTab(tab.title, i)" [class.tab-title__active]="tab.isActive">
       {{ tab.title }}
     </div>
   </div>

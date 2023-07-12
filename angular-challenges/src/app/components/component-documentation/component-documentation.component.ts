@@ -5,7 +5,7 @@ import { Tab } from '../tabs/tabs.component';
 export interface Person {
     name: string;
     surname: string;
-    birthDate: Date;
+    birthDate: string;
     sex: string;
     isMarried: boolean;
 }
@@ -49,70 +49,70 @@ export class ComponentDocumentationComponent {
         {
             name: 'John',
             surname: 'Doe',
-            birthDate: new Date(1990, 4, 15),
+            birthDate: '1990/4/15',
             sex: 'male',
             isMarried: true,
         },
         {
             name: 'Jane',
             surname: 'Smith',
-            birthDate: new Date(1985, 7, 21),
+            birthDate: '1918/2/10',
             sex: 'male',
             isMarried: true,
         },
         {
             name: 'Michael',
             surname: 'Johnson',
-            birthDate: new Date(1995, 2, 7),
+            birthDate: '1918/2/10',
             sex: 'male',
             isMarried: false,
         },
         {
             name: 'Emily',
             surname: 'Brown',
-            birthDate: new Date(1992, 9, 2),
+            birthDate: '1918/2/10',
             sex: 'female',
             isMarried: true,
         },
         {
             name: 'William',
             surname: 'Miller',
-            birthDate: new Date(1988, 11, 11),
+            birthDate: '1918/2/10',
             sex: 'male',
             isMarried: false,
         },
         {
             name: 'Olivia',
             surname: 'Davis',
-            birthDate: new Date(1998, 5, 30),
+            birthDate: '2018/2/10',
             sex: 'female',
             isMarried: true,
         },
         {
             name: 'James',
             surname: 'Wilson',
-            birthDate: new Date(1987, 1, 18),
+            birthDate: '1938/2/10',
             sex: 'male',
             isMarried: false,
         },
         {
             name: 'Sophia',
             surname: 'Anderson',
-            birthDate: new Date(1991, 8, 25),
+            birthDate: '1918/2/10',
             sex: 'female',
             isMarried: true,
         },
         {
             name: 'Benjamin',
             surname: 'Taylor',
-            birthDate: new Date(1996, 6, 9),
+            birthDate: '1918/2/10',
             sex: 'male',
             isMarried: false,
         },
         {
             name: 'Ava',
             surname: 'Thomas',
-            birthDate: new Date(1989, 3, 5),
+            birthDate: '1918/2/10',
             sex: 'male',
             isMarried: false,
         },

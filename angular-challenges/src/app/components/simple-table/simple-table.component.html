@@ -1,7 +1,7 @@
 <!-- My approach with divs -->
 <div class="table">
   <div class="header">
-    <div class="cell" *ngFor="let headerCell of data[0] | keyvalue" (click)="onHeaderClick(headerCell.key)">
+    <div class="cell" *ngFor="let headerCell of data[0] | keyvalue" (click)="onHeaderClick(headerCell.key, headerCell.value)">
       {{ headerCell.key }}
     </div>
   </div>

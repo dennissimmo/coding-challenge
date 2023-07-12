@@ -10,7 +10,8 @@ export class SortTableComponent {
     @Input() data: any[];
 
     sortingOptions: SortingOptions = {
-        key: 'none',
+        key: '',
+        value: null,
         direction: 'asc',
     };
 
@@ -36,8 +37,20 @@ export class SortTableComponent {
             } else {
                 return aValue > bValue ? -1 : 1;
             }
+        } else if (this.isDate(aValue)) {
+            if (key.direction === 'asc') {
+                return aValue.getTime() > bValue.getTime() ? 1 : -1;
+            } else {
+                return aValue.getTime() > bValue.getTime() ? -1 : 1;
+            }
         }
 
         return key.direction === 'asc' ? aValue - bValue : bValue - aValue;
+    }
+
+    isDate(value: any): boolean {
+        const parsedDate = Date.parse(value);
+
+        return !isNaN(value) && !isNaN(parsedDate);
     }
 }

@@ -35,6 +35,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { SimpleTableComponent } from './components/simple-table/simple-table.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
 
 @NgModule({
     declarations: [
@@ -58,6 +59,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
         SimpleTableComponent,
         PaginationComponent,
         TabsComponent,
+        OtherDocumentationComponent,
     ],
     imports: [
         CommonModule,

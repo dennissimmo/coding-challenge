@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <app-card [title]="'Fade In Out Animation'" [subtitle]="'Components'">
+    <div body>
+      <h2 @fadeInOut *ngIf="isHeaderVisible">World</h2>
+    </div>
+    <div footer>
+      <button (click)="toggleAnimation()">Toggle animation</button>
+    </div>
+  </app-card>
+</div>

@@ -1,4 +1,9 @@
 <div class="wrapper">
+  <app-card [title]="'Simple Table'" [subtitle]="'Components'">
+    <div body>
+      <app-sort-table [data]="people"></app-sort-table>
+    </div>
+  </app-card>
   <app-card [title]="'Tabs'" [subtitle]="'Components'">
     <div body>
       <app-tabs [tabs]="tabs" (tabChanged)="selectedIndex = $event">

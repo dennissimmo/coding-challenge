@@ -1,4 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
+export type SortingOptions = {
+    key: string;
+    direction: string;
+};
 
 @Component({
     selector: 'app-simple-table',
@@ -7,4 +12,15 @@ import { Component, Input } from '@angular/core';
 })
 export class SimpleTableComponent {
     @Input() data: any[];
+    @Input() sortingOptions: SortingOptions;
+    @Output() sortingChanged: EventEmitter<SortingOptions> =
+        new EventEmitter<SortingOptions>();
+
+    onHeaderClick(title: any): void {
+        this.sortingOptions = {
+            key: title,
+            direction: this.sortingOptions.direction === 'asc' ? 'desc' : 'asc',
+        };
+        this.sortingChanged.emit(this.sortingOptions);
+    }
 }

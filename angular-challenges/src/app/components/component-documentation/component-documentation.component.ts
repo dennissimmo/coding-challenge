@@ -6,6 +6,8 @@ export interface Person {
     name: string;
     surname: string;
     birthDate: Date;
+    sex: string;
+    isMarried: boolean;
 }
 
 @Component({
@@ -44,32 +46,76 @@ export class ComponentDocumentationComponent {
     counterMax = 200;
 
     people: Person[] = [
-        { name: 'John', surname: 'Doe', birthDate: new Date(1990, 4, 15) },
-        { name: 'Jane', surname: 'Smith', birthDate: new Date(1985, 7, 21) },
+        {
+            name: 'John',
+            surname: 'Doe',
+            birthDate: new Date(1990, 4, 15),
+            sex: 'male',
+            isMarried: true,
+        },
+        {
+            name: 'Jane',
+            surname: 'Smith',
+            birthDate: new Date(1985, 7, 21),
+            sex: 'male',
+            isMarried: true,
+        },
         {
             name: 'Michael',
             surname: 'Johnson',
             birthDate: new Date(1995, 2, 7),
+            sex: 'male',
+            isMarried: false,
         },
-        { name: 'Emily', surname: 'Brown', birthDate: new Date(1992, 9, 2) },
+        {
+            name: 'Emily',
+            surname: 'Brown',
+            birthDate: new Date(1992, 9, 2),
+            sex: 'female',
+            isMarried: true,
+        },
         {
             name: 'William',
             surname: 'Miller',
             birthDate: new Date(1988, 11, 11),
+            sex: 'male',
+            isMarried: false,
         },
-        { name: 'Olivia', surname: 'Davis', birthDate: new Date(1998, 5, 30) },
-        { name: 'James', surname: 'Wilson', birthDate: new Date(1987, 1, 18) },
+        {
+            name: 'Olivia',
+            surname: 'Davis',
+            birthDate: new Date(1998, 5, 30),
+            sex: 'female',
+            isMarried: true,
+        },
+        {
+            name: 'James',
+            surname: 'Wilson',
+            birthDate: new Date(1987, 1, 18),
+            sex: 'male',
+            isMarried: false,
+        },
         {
             name: 'Sophia',
             surname: 'Anderson',
             birthDate: new Date(1991, 8, 25),
+            sex: 'female',
+            isMarried: true,
         },
         {
             name: 'Benjamin',
             surname: 'Taylor',
             birthDate: new Date(1996, 6, 9),
+            sex: 'male',
+            isMarried: false,
         },
-        { name: 'Ava', surname: 'Thomas', birthDate: new Date(1989, 3, 5) },
+        {
+            name: 'Ava',
+            surname: 'Thomas',
+            birthDate: new Date(1989, 3, 5),
+            sex: 'male',
+            isMarried: false,
+        },
     ];
     tabs: Tab[] = [
         {

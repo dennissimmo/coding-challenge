@@ -36,6 +36,7 @@ import { SimpleTableComponent } from './components/simple-table/simple-table.com
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
+import { SortTableComponent } from './components/sort-table/sort-table.component';
 
 @NgModule({
     declarations: [
@@ -60,6 +61,7 @@ import { OtherDocumentationComponent } from './other/other-documentation/other-d
         PaginationComponent,
         TabsComponent,
         OtherDocumentationComponent,
+        SortTableComponent,
     ],
     imports: [
         CommonModule,

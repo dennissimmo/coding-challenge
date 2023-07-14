@@ -21,3 +21,25 @@ export const fadeInOut = trigger('fadeInOut', [
         ),
     ]),
 ]);
+
+export const fadeUpDown = trigger('fadeUpDown', [
+    transition(':enter', [
+        style({
+            bottom: 0,
+        }),
+        animate(
+            300,
+            style({
+                bottom: '30px',
+            })
+        ),
+    ]),
+    transition(':leave', [
+        animate(
+            500,
+            style({
+                bottom: 0,
+            })
+        ),
+    ]),
+]);

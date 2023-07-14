@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { Tab } from '../tabs/tabs.component';
 import { Position, RibbonType } from '../ribbon/ribbon.component';
 import { ToggleValue } from '../toggle-group/toggle-group.component';
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 
 export interface Person {
     name: string;
@@ -18,6 +19,8 @@ export interface Person {
     styleUrls: ['./component-documentation.component.scss'],
 })
 export class ComponentDocumentationComponent {
+    @ViewChild(SnackbarComponent) snackBar: SnackbarComponent;
+
     title = 'angular-challenges';
     items: AccordionItem[] = [
         {
@@ -175,5 +178,9 @@ export class ComponentDocumentationComponent {
 
     onTermUpdated($event: string) {
         console.log($event);
+    }
+
+    showSnackBar() {
+        this.snackBar.showMessage();
     }
 }

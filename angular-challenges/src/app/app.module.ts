@@ -44,6 +44,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RibbonComponent } from './components/ribbon/ribbon.component';
 import { ToggleGroupComponent } from './components/toggle-group/toggle-group.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
 
 @NgModule({
     declarations: [
@@ -74,6 +75,7 @@ import { BannerComponent } from './components/banner/banner.component';
         RibbonComponent,
         ToggleGroupComponent,
         BannerComponent,
+        SnackbarComponent,
     ],
     imports: [
         CommonModule,

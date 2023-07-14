@@ -1,4 +1,10 @@
 <div class="wrapper">
+  <app-card [title]="'Snack Bar'" [subtitle]="'Components'">
+    <div body>
+      <button (click)="showSnackBar()">Show SnackBar</button>
+      <app-snackbar message="Snackbar example"></app-snackbar>
+    </div>
+  </app-card>
   <app-card [title]="'Banner Cut Out'" [subtitle]="'Components'">
     <div body>
       <app-banner [text]="'Gallery'"></app-banner>

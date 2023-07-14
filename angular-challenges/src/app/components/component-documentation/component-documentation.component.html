@@ -1,4 +1,17 @@
 <div class="wrapper">
+  <app-card [title]="'Ribbon'" [subtitle]="'Components'">
+    <div body>
+      <app-ribbon [label]="'Hello World'"  [position]="positionType" [type]="type">
+
+      </app-ribbon>
+    </div>
+    <div footer>
+      <button (click)="positionType = positionTypeEnum.TOP_LEFT">Top Left</button>
+      <button (click)="positionType = positionTypeEnum.BOTTOM_RIGHT">Bottom Right</button>
+      <button (click)="type = typeEnum.INFO">Info</button>
+      <button (click)="type = typeEnum.SUCCESS">Success</button>
+    </div>
+  </app-card>
   <app-card [title]="'Simple Table'" [subtitle]="'Components'">
     <div body>
       <app-email-form></app-email-form>

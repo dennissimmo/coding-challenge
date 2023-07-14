@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { Tab } from '../tabs/tabs.component';
+import { Position, RibbonType } from '../ribbon/ribbon.component';
 
 export interface Person {
     name: string;
@@ -44,6 +45,11 @@ export class ComponentDocumentationComponent {
     ];
     counterMin = 0;
     counterMax = 200;
+
+    positionType: Position;
+    type: RibbonType;
+    positionTypeEnum = Position;
+    typeEnum = RibbonType;
 
     people: Person[] = [
         {
@@ -139,6 +145,8 @@ export class ComponentDocumentationComponent {
                 phone: '+1234567890',
             };
         });
+
+        this.positionType = Position.TOP_RIGHT;
     }
 
     update(): void {

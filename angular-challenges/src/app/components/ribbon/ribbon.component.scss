@@ -1,0 +1,59 @@
+@import "colors";
+
+.ribbon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  background: $red;
+}
+
+.info {
+  background-color: $blue;
+}
+
+.error {
+  background-color: $red;
+}
+
+.success {
+  background-color: $green;
+}
+
+.warning {
+  background-color: $orange;
+}
+
+.top {
+
+  &-right {
+    right: -45px;
+    top: 30px;
+    transform: rotate(45deg);
+  }
+
+  &-left {
+    left: -45px;
+    top: 30px;
+    transform: rotate(-45deg);
+  }
+}
+
+.bottom {
+
+  &-right {
+    right: -45px;
+    bottom: 30px;
+    transform: rotate(-45deg);
+  }
+
+  &-left {
+    left: -45px;
+    bottom: 30px;
+    transform: rotate(45deg);
+  }
+}

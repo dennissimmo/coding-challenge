@@ -41,6 +41,7 @@ import { EmailFormComponent } from './components/email-form/email-form.component
 import { DirectivesModule } from './directives/directives.module';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RibbonComponent } from './components/ribbon/ribbon.component';
 
 @NgModule({
     declarations: [
@@ -68,6 +69,7 @@ import { HttpClientModule } from '@angular/common/http';
         SortTableComponent,
         EmailFormComponent,
         ServiceDocumentationComponent,
+        RibbonComponent,
     ],
     imports: [
         CommonModule,

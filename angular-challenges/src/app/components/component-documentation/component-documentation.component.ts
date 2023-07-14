@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { Tab } from '../tabs/tabs.component';
 import { Position, RibbonType } from '../ribbon/ribbon.component';
+import { ToggleValue } from '../toggle-group/toggle-group.component';
 
 export interface Person {
     name: string;
@@ -135,6 +136,25 @@ export class ComponentDocumentationComponent {
     ];
 
     selectedIndex = 0;
+    toggleGroup: ToggleValue[] = [
+        {
+            label: 'Angular',
+            value: 'Angular',
+            isSelected: true,
+        },
+        {
+            label: 'React',
+            value: 'React JS',
+        },
+        {
+            label: 'Vue',
+            value: 'Vue JS',
+        },
+        {
+            label: 'Svelt',
+            value: 'Svelt JS',
+        },
+    ];
 
     constructor() {
         // Add additional properties to each person object

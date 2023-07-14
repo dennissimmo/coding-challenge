@@ -1,4 +1,9 @@
 <div class="wrapper">
+  <app-card [title]="'Toggle Button Group'" [subtitle]="'Components'">
+    <div body>
+      <app-toggle-group [toggleList]="toggleGroup"></app-toggle-group>
+    </div>
+  </app-card>
   <app-card [title]="'Ribbon'" [subtitle]="'Components'">
     <div body>
       <app-ribbon [label]="'Hello World'"  [position]="positionType" [type]="type">

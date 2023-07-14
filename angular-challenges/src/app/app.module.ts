@@ -42,6 +42,7 @@ import { DirectivesModule } from './directives/directives.module';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RibbonComponent } from './components/ribbon/ribbon.component';
+import { ToggleGroupComponent } from './components/toggle-group/toggle-group.component';
 
 @NgModule({
     declarations: [
@@ -70,6 +71,7 @@ import { RibbonComponent } from './components/ribbon/ribbon.component';
         EmailFormComponent,
         ServiceDocumentationComponent,
         RibbonComponent,
+        ToggleGroupComponent,
     ],
     imports: [
         CommonModule,

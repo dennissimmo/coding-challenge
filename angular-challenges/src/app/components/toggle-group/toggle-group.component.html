@@ -1,0 +1,5 @@
+<div class="toggle-group">
+  <div class="toggle-btn" *ngFor="let btn of toggleList" [class.selected]="btn.isSelected" (click)="toggleButton(btn)">
+    {{ btn.label }}
+  </div>
+</div>

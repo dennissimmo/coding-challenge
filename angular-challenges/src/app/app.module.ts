@@ -39,6 +39,8 @@ import { OtherDocumentationComponent } from './other/other-documentation/other-d
 import { SortTableComponent } from './components/sort-table/sort-table.component';
 import { EmailFormComponent } from './components/email-form/email-form.component';
 import { DirectivesModule } from './directives/directives.module';
+import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -65,6 +67,7 @@ import { DirectivesModule } from './directives/directives.module';
         OtherDocumentationComponent,
         SortTableComponent,
         EmailFormComponent,
+        ServiceDocumentationComponent,
     ],
     imports: [
         CommonModule,
@@ -77,6 +80,7 @@ import { DirectivesModule } from './directives/directives.module';
         BrowserAnimationsModule,
         ReactiveFormsModule,
         DirectivesModule,
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

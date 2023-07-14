@@ -2,6 +2,7 @@ import { Route } from '@angular/router';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
+import { formDirtyGuard } from './other/form-dirty.guard';
 
 export const routes: Route[] = [
     {
@@ -32,5 +33,6 @@ export const routes: Route[] = [
     {
         path: 'other',
         component: OtherDocumentationComponent,
+        canDeactivate: [formDirtyGuard],
     },
 ];

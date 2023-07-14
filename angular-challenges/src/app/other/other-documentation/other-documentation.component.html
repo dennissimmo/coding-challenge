@@ -7,4 +7,12 @@
       <button (click)="toggleAnimation()">Toggle animation</button>
     </div>
   </app-card>
+  <app-card [title]="'Form Dirty Guard'">
+    <div body>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <input placeholder="Enter something" formControlName="text">
+        <button type="submit"></button>
+      </form>
+    </div>
+  </app-card>
 </div>

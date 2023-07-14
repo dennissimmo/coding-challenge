@@ -6,6 +6,7 @@ import { DirectiveDocumentationComponent } from './directive-documentation/direc
 import { SharedModule } from '../shared/shared.module';
 import { RippleDirective } from './ripple/ripple.directive';
 import { FocusDirective } from './focus/focus.directive';
+import { ScaleDirective } from './scale/scale.directive';
 
 @NgModule({
     declarations: [
@@ -13,6 +14,7 @@ import { FocusDirective } from './focus/focus.directive';
         DebounceDirective,
         RippleDirective,
         FocusDirective,
+        ScaleDirective,
     ],
     imports: [CommonModule, DirectivesRoutingModule, SharedModule],
     exports: [FocusDirective],

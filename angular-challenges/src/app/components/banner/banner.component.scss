@@ -1,0 +1,20 @@
+.banner {
+  background-size: cover;
+  position: relative;
+  height: 300px;
+
+  p {
+    background-color: white;
+    color: black;
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: .5rem;
+    mix-blend-mode: screen;
+  }
+}

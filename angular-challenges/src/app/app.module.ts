@@ -43,6 +43,7 @@ import { ServiceDocumentationComponent } from './services/service-documentation/
 import { HttpClientModule } from '@angular/common/http';
 import { RibbonComponent } from './components/ribbon/ribbon.component';
 import { ToggleGroupComponent } from './components/toggle-group/toggle-group.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
     declarations: [
@@ -72,6 +73,7 @@ import { ToggleGroupComponent } from './components/toggle-group/toggle-group.com
         ServiceDocumentationComponent,
         RibbonComponent,
         ToggleGroupComponent,
+        BannerComponent,
     ],
     imports: [
         CommonModule,

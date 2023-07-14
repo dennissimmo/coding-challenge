@@ -1,0 +1,5 @@
+<div class="popup-container" (click)="showPopup()">
+  <ng-content></ng-content>
+  <div class="popup-text" *ngIf="isVisible" @fadeInOut>{{ message }}</div>
+</div>
+

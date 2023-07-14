@@ -1,4 +1,11 @@
 <div class="wrapper">
+  <app-card [title]="'Popup'" [subtitle]="'Components'">
+    <div body>
+      <app-popup message="Popup example">
+        <h2>Hello World</h2>
+      </app-popup>
+    </div>
+  </app-card>
   <app-card [title]="'Snack Bar'" [subtitle]="'Components'">
     <div body>
       <button (click)="showSnackBar()">Show SnackBar</button>

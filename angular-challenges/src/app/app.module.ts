@@ -21,7 +21,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LoaderComponent } from './components/loader/loader.component';
 import { SharedModule } from './shared/shared.module';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipesModule } from './pipes/pipes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
@@ -37,6 +37,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { TabsComponent } from './components/tabs/tabs.component';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
 import { SortTableComponent } from './components/sort-table/sort-table.component';
+import { EmailFormComponent } from './components/email-form/email-form.component';
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
     declarations: [
@@ -62,6 +64,7 @@ import { SortTableComponent } from './components/sort-table/sort-table.component
         TabsComponent,
         OtherDocumentationComponent,
         SortTableComponent,
+        EmailFormComponent,
     ],
     imports: [
         CommonModule,
@@ -72,6 +75,8 @@ import { SortTableComponent } from './components/sort-table/sort-table.component
         SharedModule,
         FormsModule,
         BrowserAnimationsModule,
+        ReactiveFormsModule,
+        DirectivesModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

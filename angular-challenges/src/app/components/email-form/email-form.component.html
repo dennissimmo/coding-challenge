@@ -1,0 +1,34 @@
+<form [formGroup]="form">
+  <div class="container">
+    <h2>Get in touch </h2>
+    <div class="user-data">
+      <div class="name">
+        <div class="form-field" [class.form-field_error]="hasError('name', 'required')">
+            <fa-icon class="form-field__icon" [icon]="['fas', 'user']"></fa-icon>
+            <input class="input-control" id="username" placeholder="Your Name" formControlName="name" appFocus parentClass="form-field">
+        </div>
+        <span class="error" *ngIf="hasError('name', 'required')">
+          Field is required
+      </span>
+      </div>
+
+      <div class="email">
+        <div class="form-field" [class.form-field_error]="hasError('email', 'pattern')">
+          <fa-icon class="form-field__icon" [icon]="['fas', 'envelope']"></fa-icon>
+          <input class="input-control" id="email" formControlName="email" placeholder="Your Email" appFocus parentClass="form-field">
+        </div>
+        <span class="error" *ngIf="hasError('email', 'pattern')">
+          Email is invalid
+        </span>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <fa-icon class="form-field__icon" [icon]="['fas', 'comment']"></fa-icon>
+      <textarea class="input-control" id="message" placeholder="Your Message" formControlName="message" appFocus parentClass="form-field">
+      </textarea>
+    </div>
+    <button class="submit-btn" (click)="onSubmit()" [disabled]="form.invalid">Submit</button>
+  </div>
+
+</form>

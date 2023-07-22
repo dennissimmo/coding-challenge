@@ -4,6 +4,7 @@ import { Tab } from '../tabs/tabs.component';
 import { Position, RibbonType } from '../ribbon/ribbon.component';
 import { ToggleValue } from '../toggle-group/toggle-group.component';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SnackbarService } from '../../services/snackbar/snackbar.service';
 
 export interface Person {
     name: string;
@@ -159,7 +160,7 @@ export class ComponentDocumentationComponent {
         },
     ];
 
-    constructor() {
+    constructor(private snackbarService: SnackbarService) {
         // Add additional properties to each person object
         this.people = this.people.map((person) => {
             return {
@@ -180,7 +181,8 @@ export class ComponentDocumentationComponent {
         console.log($event);
     }
 
-    showSnackBar() {
-        this.snackBar.showMessage();
+    showSnackBar(): void {
+        this.snackbarService.showMessage('Snackbar triggered through service');
+        // this.snackBar.showMessage();
     }
 }

@@ -1,0 +1,20 @@
+@import "colors";
+
+.countdown {
+  padding: 1rem;
+  display: flex;
+  background-color: $blue;
+  gap: .5rem;
+
+  &-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}

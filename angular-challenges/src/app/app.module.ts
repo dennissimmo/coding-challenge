@@ -46,6 +46,7 @@ import { ToggleGroupComponent } from './components/toggle-group/toggle-group.com
 import { BannerComponent } from './components/banner/banner.component';
 import { SnackbarComponent } from './components/snackbar/snackbar.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 
 @NgModule({
     declarations: [
@@ -78,6 +79,7 @@ import { PopupComponent } from './components/popup/popup.component';
         BannerComponent,
         SnackbarComponent,
         PopupComponent,
+        CountdownTimerComponent,
     ],
     imports: [
         CommonModule,
